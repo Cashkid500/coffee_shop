@@ -1,6 +1,6 @@
 # coffee_shop
 
-Coffee Shop is a mobile application developed with Fluttert  .
+Coffee Shop is a mobile application developed with Flutter.
 
 ## Getting Started
 
