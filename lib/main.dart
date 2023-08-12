@@ -1,4 +1,5 @@
 import 'package:coffee_shop/constants/asset_path.dart';
+import 'package:coffee_shop/constants/color_constants.dart';
 import 'package:coffee_shop/screens/dashboard/dashboard.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: blackText,
         ),
         child: Stack(
           children: [
@@ -52,8 +53,8 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'Coffee so good, your taste buds will love it.',
                         style: TextStyle(
-                            color: Color(0xffFFFFFF),
-                            fontFamily: 'Sora',
+                            color: whiteText,
+                            fontFamily: CoffeeShopAssetsPath.soraFont,
                             fontSize: 30.0,
                             fontWeight: FontWeight.w600),
                         textAlign: TextAlign.center,
@@ -67,8 +68,8 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'The best grain, the finest roast, the powerful flavor.',
                         style: TextStyle(
-                            color: Color(0xffA9A9A9),
-                            fontFamily: 'Sora',
+                            color: darkGrayText,
+                            fontFamily: CoffeeShopAssetsPath.soraFont,
                             fontSize: 14.0,
                             fontWeight: FontWeight.w400),
                         textAlign: TextAlign.center,
@@ -93,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                         width: 317,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Color(0xffFFFFFF),
+                          color: whiteText,
                         ),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 30, bottom: 10),
@@ -105,10 +106,10 @@ class _HomePageState extends State<HomePage> {
                                 child: Text(
                                   'Continue with Google',
                                   style: TextStyle(
-                                      fontFamily: 'Roboto',
+                                      fontFamily: CoffeeShopAssetsPath.robotoFont,
                                       fontSize: 20,
                                       fontWeight: FontWeight.w600,
-                                      color: Colors.grey,
+                                      color: darkGrayText,
                                     ),
                                 ),
                               ),

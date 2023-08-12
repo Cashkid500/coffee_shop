@@ -1,5 +1,7 @@
 import 'package:coffee_shop/constants/asset_path.dart';
+import 'package:coffee_shop/constants/color_constants.dart';
 import 'package:flutter/material.dart';
+
 class OrderScreen extends StatefulWidget {
   const OrderScreen({Key? key}) : super(key: key);
 
@@ -35,7 +37,11 @@ class _OrderScreenState extends State<OrderScreen> {
                     const Spacer(),
                     Text(
                       "Order",
-                      style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w600, fontSize: 18, color: Color(0xff2F2D2C)),
+                      style: TextStyle(
+                          fontFamily: CoffeeShopAssetsPath.soraFont,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18,
+                          color: darkCharcoalText),
                     ),
                     const Spacer(),
                   ],
@@ -44,9 +50,9 @@ class _OrderScreenState extends State<OrderScreen> {
               Center(
                 child: Container(
                   decoration: BoxDecoration(
-                      color: Color(0xffF0F0F0),
+                      color: lightRedBox,
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Color(0xffDEDEDE))),
+                      border: Border.all(color: gray87Box)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -55,15 +61,15 @@ class _OrderScreenState extends State<OrderScreen> {
                         width: 154,
                         height: 40,
                         decoration: BoxDecoration(
-                          color: Color(0xffC67C4E),
+                          color: pinkButton,
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Center(
                           child: Text(
                             "Deliver",
                             style: TextStyle(
-                              fontFamily: 'Sora',
-                              color: Colors.white,
+                              fontFamily: CoffeeShopAssetsPath.soraFont,
+                              color: whiteText,
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
                             ),
@@ -78,8 +84,10 @@ class _OrderScreenState extends State<OrderScreen> {
                           child: Text(
                             "Pick Up",
                             style: TextStyle(
-                                fontFamily: 'Sora',
-                                fontWeight: FontWeight.w400, fontSize: 16, color: Color(0xff2F2D2C)),
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16,
+                                color: darkCharcoalText),
                           ),
                         ),
                       ),
@@ -92,16 +100,20 @@ class _OrderScreenState extends State<OrderScreen> {
                 child: Text(
                   "Delivery Address",
                   style: TextStyle(
-                    fontFamily: 'Sora',
+                    fontFamily: CoffeeShopAssetsPath.soraFont,
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
-                    color: Color(0xff2F2D2C),
+                    color: darkCharcoalText,
                   ),
                 ),
               ),
               Text(
                 "JI. Kpg Sutoyo",
-                style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w600, fontSize: 14, color: Color(0xff303336)),
+                style: TextStyle(
+                    fontFamily: CoffeeShopAssetsPath.soraFont,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 14,
+                    color: unknownColorText),
               ),
               Padding(
                 padding: const EdgeInsets.only(
@@ -111,8 +123,8 @@ class _OrderScreenState extends State<OrderScreen> {
                 child: Text(
                   "Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai.",
                   style: TextStyle(
-                    fontFamily: 'Sora',
-                    color: Color(0xff808080),
+                    fontFamily: CoffeeShopAssetsPath.soraFont,
+                    color: grayText,
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
                   ),
@@ -133,22 +145,23 @@ class _OrderScreenState extends State<OrderScreen> {
                             padding: EdgeInsets.all(8.0),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(16),
-                                border: Border.all(color: Color(0xffDEDEDE))),
+                                border: Border.all(color: gray87Box)),
                             child: Padding(
                               padding: const EdgeInsets.only(right: 5),
                               child: Row(
                                 children: [
                                   Image.asset(CoffeeShopAssetsPath.editImage),
                                   SizedBox(
-                                  width: 5,
+                                    width: 5,
                                   ),
                                   Center(
                                     child: Text(
                                       "Edit Address",
                                       style: TextStyle(
-                                          fontFamily: 'Sora',
+                                          fontFamily: CoffeeShopAssetsPath.soraFont,
                                           fontSize: 12,
-                                          fontWeight: FontWeight.w400, color: Color(0xff303336)),
+                                          fontWeight: FontWeight.w400,
+                                          color: unknownColorText),
                                     ),
                                   ),
                                 ],
@@ -158,12 +171,14 @@ class _OrderScreenState extends State<OrderScreen> {
                         ],
                       ),
                     ),
-                    SizedBox(width: 1,),
+                    SizedBox(
+                      width: 1,
+                    ),
                     Container(
                       padding: EdgeInsets.all(8.0),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: Color(0xffDEDEDE))),
+                          border: Border.all(color: gray87Box)),
                       child: Center(
                         child: Row(
                           children: [
@@ -174,8 +189,10 @@ class _OrderScreenState extends State<OrderScreen> {
                             Text(
                               "Add Note",
                               style: TextStyle(
-                                  fontFamily: 'Sora',
-                                  fontSize: 12, fontWeight: FontWeight.w400, color:Color(0xff303336)),
+                                  fontFamily: CoffeeShopAssetsPath.soraFont,
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: unknownColorText),
                             ),
                           ],
                         ),
@@ -188,7 +205,9 @@ class _OrderScreenState extends State<OrderScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Image.asset(CoffeeShopAssetsPath.cappucino6),
-                  SizedBox(width: 20,),
+                  SizedBox(
+                    width: 20,
+                  ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -196,24 +215,28 @@ class _OrderScreenState extends State<OrderScreen> {
                       Text(
                         "Cappucino",
                         style: TextStyle(
-                          fontFamily: 'Sora',
+                          fontFamily: CoffeeShopAssetsPath.soraFont,
                           fontWeight: FontWeight.w600,
                           fontSize: 16,
-                          color: Color(0xff2F2D2C),
+                          color: darkCharcoalText,
                         ),
                       ),
-                      SizedBox(height: 5,),
+                      SizedBox(
+                        height: 5,
+                      ),
                       Text(
                         "with Chocolate",
                         style: TextStyle(
-                            fontFamily: 'Sora',
+                            fontFamily: CoffeeShopAssetsPath.soraFont,
                             fontWeight: FontWeight.w400,
                             fontSize: 12,
-                            color: Color(0xff9B9B9B)),
+                            color: darkGray2Text),
                       )
                     ],
                   ),
-                  SizedBox(width: 50,),
+                  SizedBox(
+                    width: 50,
+                  ),
                   Row(
                     children: [
                       Container(
@@ -221,7 +244,7 @@ class _OrderScreenState extends State<OrderScreen> {
                           width: 30,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
-                              border: Border.all(color: Color(0xffDEDEDE))),
+                              border: Border.all(color: gray87Text)),
                           child: Center(
                               child: Icon(
                             Icons.remove,
@@ -233,10 +256,10 @@ class _OrderScreenState extends State<OrderScreen> {
                       Text(
                         "1",
                         style: TextStyle(
-                            fontFamily: 'Sora',
-                            fontWeight: FontWeight.w600, 
-                            fontSize: 15, 
-                            color: Color(0xff2F2D2C)),
+                            fontFamily: CoffeeShopAssetsPath.soraFont,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 15,
+                            color: darkCharcoalText),
                       ),
                       SizedBox(
                         width: 10,
@@ -246,7 +269,7 @@ class _OrderScreenState extends State<OrderScreen> {
                           width: 30,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
-                              border: Border.all(color: Color(0xffDEDEDE))),
+                              border: Border.all(color: gray87Box)),
                           child: Center(
                               child: Icon(
                             Icons.add,
@@ -267,7 +290,7 @@ class _OrderScreenState extends State<OrderScreen> {
                   child: Divider(
                     height: 4,
                     thickness: 5,
-                    color: Color(0xffF4F4F4),
+                    color: whiteText,
                   ),
                 ),
               ),
@@ -281,7 +304,7 @@ class _OrderScreenState extends State<OrderScreen> {
                     height: 56,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.white),
+                        color: whiteBox),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -295,8 +318,11 @@ class _OrderScreenState extends State<OrderScreen> {
                           child: Text(
                             "1 Discount is applied",
                             style: TextStyle(
-                              fontFamily: 'Sora',
-                              fontSize: 14, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C),),
+                              fontFamily: CoffeeShopAssetsPath.soraFont,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: darkCharcoalText,
+                            ),
                           ),
                         ),
                         Image.asset(CoffeeShopAssetsPath.arrow2),
@@ -310,7 +336,11 @@ class _OrderScreenState extends State<OrderScreen> {
               ),
               Text(
                 "Payment Summary",
-                style: TextStyle(fontFamily: 'Sora', fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C)),
+                style: TextStyle(
+                    fontFamily: CoffeeShopAssetsPath.soraFont,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: darkCharcoalText),
               ),
               SizedBox(
                 height: 15,
@@ -321,19 +351,19 @@ class _OrderScreenState extends State<OrderScreen> {
                   Text(
                     "Price",
                     style: TextStyle(
-                    fontFamily: 'Sora',
-                    fontWeight: FontWeight.w400,
-                    fontSize: 14,
-                    color: Color(0xff2F2D2C),
+                      fontFamily: CoffeeShopAssetsPath.soraFont,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 14,
+                      color: darkCharcoalText,
                     ),
                   ),
                   Text(
                     "\$ 4.53",
                     style: TextStyle(
-                      fontFamily: 'Sora',
+                      fontFamily: CoffeeShopAssetsPath.soraFont,
                       fontWeight: FontWeight.w600,
                       fontSize: 14,
-                      color: Color(0xff2F2D2C),
+                      color: darkCharcoalText,
                     ),
                   ),
                 ],
@@ -347,31 +377,31 @@ class _OrderScreenState extends State<OrderScreen> {
                   Text(
                     "Delivery Fee",
                     style: TextStyle(
-                    fontFamily: 'Sora',
-                    fontWeight: FontWeight.w400,
-                    fontSize: 14,
-                    color: Color(0xff2F2D2C),
+                      fontFamily: CoffeeShopAssetsPath.soraFont,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 14,
+                      color: darkCharcoalText,
                     ),
                   ),
                   RichText(
                     text: TextSpan(
                       style: TextStyle(
-                          fontFamily: 'Sora',
-                          decoration: TextDecoration.lineThrough,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                          color: Color(0xff2F2D2C),
+                        fontFamily: CoffeeShopAssetsPath.soraFont,
+                        decoration: TextDecoration.lineThrough,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 14,
+                        color: darkCharcoalText,
                       ),
                       children: [
                         TextSpan(text: "\$ 2.0  "),
                         TextSpan(
                           text: "\$ 1.0",
                           style: TextStyle(
-                            fontFamily: 'Sora',
+                            fontFamily: CoffeeShopAssetsPath.soraFont,
                             decoration: TextDecoration.none,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 14,
-                          color: Color(0xff2F2D2C),
+                            fontWeight: FontWeight.w600,
+                            fontSize: 14,
+                            color: darkCharcoalText,
                           ),
                         ),
                       ],
@@ -387,7 +417,7 @@ class _OrderScreenState extends State<OrderScreen> {
                 child: SizedBox(
                     height: 10,
                     width: 315,
-                    child: Divider(thickness: 2, color: Color(0xffEAEAEA))),
+                    child: Divider(thickness: 2, color: whisperText)),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -395,19 +425,19 @@ class _OrderScreenState extends State<OrderScreen> {
                   Text(
                     "Total Payment",
                     style: TextStyle(
-                    fontFamily: 'Sora',
-                    fontWeight: FontWeight.w400,
-                    fontSize: 14,
-                    color: Color(0xff2F2D2C),
+                      fontFamily: CoffeeShopAssetsPath.soraFont,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 14,
+                      color: darkCharcoalText,
                     ),
                   ),
                   Text(
                     "\$ 5.53",
                     style: TextStyle(
-                    fontFamily: 'Sora',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 14,
-                    color: Color(0xff2F2D2C)),
+                        fontFamily: CoffeeShopAssetsPath.soraFont,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 14,
+                        color: darkCharcoalText),
                   ),
                 ],
               ),
@@ -428,28 +458,29 @@ class _OrderScreenState extends State<OrderScreen> {
                         height: 24,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xffC67C4E),
+                          color: pinkButton,
                         ),
                         child: Center(
                           child: Text(
                             'Cash',
                             style: TextStyle(
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w400,
-                              fontSize: 12,
-                              color: Color(0xffffffff)),
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 12,
+                                color: whiteText),
                           ),
                         ),
                       ),
                       SizedBox(
                         width: 15,
                       ),
-                      Text("\$ 5.53",
+                      Text(
+                        "\$ 5.53",
                         style: TextStyle(
-                        fontFamily: 'Sora',
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                        color: Color(0xff2F2D2C)),
+                            fontFamily: CoffeeShopAssetsPath.soraFont,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 12,
+                            color: darkCharcoalText),
                       ),
                     ],
                   ),
@@ -464,15 +495,15 @@ class _OrderScreenState extends State<OrderScreen> {
                 height: 55,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
-                    color: Color(0xffC67C4E)),
+                    color: pinkButton),
                 child: Center(
                   child: Text(
                     "Order",
                     style: TextStyle(
-                        fontFamily: 'Sora',
+                        fontFamily: CoffeeShopAssetsPath.soraFont,
                         fontWeight: FontWeight.w600,
-                        color: Color(0xffffffff),
-                        fontSize: 16) ,
+                        color: whiteText,
+                        fontSize: 16),
                   ),
                 ),
               ),

@@ -1,4 +1,5 @@
 import 'package:coffee_shop/constants/asset_path.dart';
+import 'package:coffee_shop/constants/color_constants.dart';
 import 'package:flutter/material.dart';
 import '../detail/detail.dart';
 
@@ -32,7 +33,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 270,
-                color: Color(0xff131313),
+                color: sealBrownText,
                 child: Column(
                   children: [
                     Row(
@@ -51,9 +52,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                   child: Text(
                                     "Location",
                                     style: TextStyle(
-                                        fontFamily: 'Sora',
+                                        fontFamily: CoffeeShopAssetsPath.soraFont,
                                         fontSize: 12,
-                                        color: Colors.white,
+                                        color: whiteText,
                                         fontWeight: FontWeight.w400),
                                   ),
                                 ),
@@ -64,9 +65,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                       Text(
                                         "Bilzen,Tanjungbalai",
                                         style: TextStyle(
-                                            fontFamily: 'Sora',
+                                            fontFamily: CoffeeShopAssetsPath.soraFont,
                                             fontSize: 14,
-                                            color: Colors.white,
+                                            color: whiteText,
                                             fontWeight: FontWeight.w600,
                                           ),
                                       ),
@@ -103,10 +104,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               isCollapsed: true,
                               labelText: 'Search coffee',
                               labelStyle: TextStyle(
-                                fontFamily: 'Sora',
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
-                                color: Color(0xff989898),
+                                color: spanishGrayText,
                               ),
                               prefixIcon: Image.asset(
                                 CoffeeShopAssetsPath.searchImage,
@@ -114,7 +115,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               suffixIcon:
                                   Image.asset(CoffeeShopAssetsPath.frame10),
                               filled: true,
-                              fillColor: Color(0xff313131),
+                              fillColor: nightRiderText,
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(15),
                               ),
@@ -159,22 +160,22 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             height: 45,
                             decoration: BoxDecoration(
                               color: current == index
-                                  ? Color(0xffC67C4E)
-                                  : Color(0xffF3F3F3),
+                                  ? pinkText
+                                  : whiteSmokeText,
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Center(
                               child: Text(
                                 items[index],
                                 style: TextStyle(
-                                  fontFamily: 'Sora',
+                                  fontFamily: CoffeeShopAssetsPath.soraFont,
                                   fontWeight: current == index
                                       ? FontWeight.w600
                                       : FontWeight.w400,
                                   fontSize: 14,
                                   color: current == index
-                                      ? Color(0xffffffff)
-                                      : Colors.black,
+                                      ? whiteText
+                                      : blackText,
                                 ),
                               ),
                             ),
@@ -226,10 +227,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               child: Text(
                                 '4.8',
                                 style: TextStyle(
-                                  fontFamily: 'Sora',
+                                  fontFamily: CoffeeShopAssetsPath.soraFont,
                                   fontWeight: FontWeight.w600,
                                   fontSize: 13,
-                                  color: Colors.white,
+                                  color: whiteText,
                                 ),
                               ),
                             ),
@@ -242,7 +243,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           child: Text(
                             "Cappucino",
                             style: TextStyle(
-                              fontFamily: 'Sora',
+                              fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
                             ),
@@ -255,10 +256,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           child: Text(
                             "with Chocolate",
                             style: TextStyle(
-                                fontFamily: 'Sora',
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 12,
-                                color: Color(0xff9B9B9B)),
+                                color: darkGray2Text),
                           ),
                         ),
                       ),
@@ -268,10 +269,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           children: [
                             Text("\$ 4.53",
                             style: TextStyle(
-                                fontFamily: 'Sora',
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w600,
                                 fontSize: 18,
-                                color: Color(0xff2F4B4E)),
+                                color: deepBrownText),
                               ),
                             SizedBox(width: 30.0,),
                             Image.asset(CoffeeShopAssetsPath.frame17),
@@ -306,10 +307,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               child: Text(
                                 '4.8',
                                 style: TextStyle(
-                                  fontFamily: 'Sora',
+                                  fontFamily: CoffeeShopAssetsPath.soraFont,
                                   fontWeight: FontWeight.w600,
                                   fontSize: 13,
-                                  color: Colors.white,
+                                  color: whiteText,
                                 ),
                               ),
                             ),
@@ -322,7 +323,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           child: Text(
                             "Cappucino",
                             style: TextStyle(
-                              fontFamily: 'Sora',
+                              fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
                             ),
@@ -335,10 +336,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           child: Text(
                             "with Chocolate",
                             style: TextStyle(
-                                fontFamily: 'Sora',
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 12,
-                                color: Color(0xff9B9B9B)),
+                                color: darkGray2Text),
                           ),
                         ),
                       ),
@@ -347,10 +348,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           children: [
                             Text("\$ 4.53",
                             style: TextStyle(
-                              fontFamily: 'Sora',
+                              fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
                               fontSize: 18,
-                              color: Color(0xff2F4B4E)),),
+                              color: deepBrownText),),
                             SizedBox(width: 30.0,),
                             Image.asset(CoffeeShopAssetsPath.frame17),
                           ],
@@ -397,10 +398,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             child: Text(
                               '4.5',
                               style: TextStyle(
-                                fontFamily: 'Sora',
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w600,
                                 fontSize: 13,
-                                color: Colors.white,
+                                color: whiteText,
                               ),
                             ),
                           ),
@@ -413,7 +414,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         child: Text(
                           "Cappucino",
                           style: TextStyle(
-                            fontFamily: 'Sora',
+                            fontFamily: CoffeeShopAssetsPath.soraFont,
                             fontWeight: FontWeight.w600,
                             fontSize: 16,
                           ),
@@ -428,7 +429,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 12,
-                              color: Color(0xff9B9B9B)),
+                              color: darkGray2Text),
                         ),
                       ),
                     ),
@@ -437,10 +438,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         children: [
                           Text("\$ 4.53",
                           style: TextStyle(
-                              fontFamily: 'Sora',
+                              fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
                               fontSize: 18,
-                              color: Color(0xff2F4B4E)),
+                              color: deepBrownText),
                             ),
                             SizedBox(width: 30.0,),
                           Image.asset(CoffeeShopAssetsPath.frame17),
@@ -475,10 +476,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             child: Text(
                               '4.0',
                               style: TextStyle(
-                                fontFamily: 'Sora',
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w600,
                                 fontSize: 13,
-                                color: Colors.white,
+                                color: whiteText,
                               ),
                             ),
                           ),
@@ -491,7 +492,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         child: Text(
                           "Cappucino",
                           style: TextStyle(
-                          fontFamily: 'Sora',
+                          fontFamily: CoffeeShopAssetsPath.soraFont,
                           fontWeight: FontWeight.w600,
                           fontSize: 16,
                           ),
@@ -504,10 +505,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         child: Text(
                           "with Chocolate",
                           style: TextStyle(
-                              fontFamily: 'Sora',
+                              fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w400,
                               fontSize: 12,
-                              color: Color(0xff9B9B9B)),
+                              color: darkGray2Text),
                         ),
                       ),
                     ),
@@ -516,10 +517,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         children: [
                           Text("\$ 4.53",
                           style: TextStyle(
-                              fontFamily: 'Sora',
+                              fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
                               fontSize: 18,
-                              color: Color(0xff2F4B4E)),
+                              color: deepBrownText),
                             ),
                           SizedBox(width: 30.0,),
                           Image.asset(CoffeeShopAssetsPath.frame17),
@@ -543,7 +544,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         },
         items: [
           BottomNavigationBarItem(
-            backgroundColor: Colors.white,
+            backgroundColor: whiteText,
             icon: Image.asset(
               CoffeeShopAssetsPath.homeImage,
             ),

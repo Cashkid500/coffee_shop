@@ -1,4 +1,5 @@
 import 'package:coffee_shop/constants/asset_path.dart';
+import 'package:coffee_shop/constants/color_constants.dart';
 import 'package:flutter/material.dart';
 import '../order/order.dart';
 
@@ -30,7 +31,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   Text(
                     "Detail",
                     style: TextStyle(
-                      fontFamily: 'Sora',
+                      fontFamily: CoffeeShopAssetsPath.soraFont,
                       fontWeight: FontWeight.w600,
                       fontSize: 18,
                     ),
@@ -59,15 +60,16 @@ class _DetailScreenState extends State<DetailScreen> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(
-                          top: 20, left: 5,
+                          top: 20,
+                          left: 5,
                         ),
                         child: Text(
                           "Cappucino",
                           style: TextStyle(
-                            fontFamily: 'Sora',
+                            fontFamily: CoffeeShopAssetsPath.soraFont,
                             fontWeight: FontWeight.w600,
                             fontSize: 20,
-                            color: Color(0xff2F2D2C),
+                            color: darkCharcoalText,
                           ),
                         ),
                       ),
@@ -80,8 +82,8 @@ class _DetailScreenState extends State<DetailScreen> {
                         child: Text(
                           "with Chocolate",
                           style: TextStyle(
-                            fontFamily: 'Sora',
-                            color: Color(0xff9B9B9B),
+                            fontFamily: CoffeeShopAssetsPath.soraFont,
+                            color: darkGray2Text,
                             fontWeight: FontWeight.w400,
                             fontSize: 12,
                           ),
@@ -89,21 +91,25 @@ class _DetailScreenState extends State<DetailScreen> {
                       ),
                       Row(
                         children: [
-                          SizedBox(width: 10,),
-                          Image.asset(
-                            CoffeeShopAssetsPath.ratingImage
+                          SizedBox(
+                            width: 10,
                           ),
+                          Image.asset(CoffeeShopAssetsPath.ratingImage),
                           Text(
                             "4.8",
                             style: TextStyle(
-                                fontFamily: 'Sora',
-                                fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C)),
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                                color: darkCharcoalText),
                           ),
                           Text(
                             "(230)",
                             style: TextStyle(
-                                fontFamily: 'Sora',
-                                fontSize: 12, fontWeight: FontWeight.w400, color: Color(0xff808080)),
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                                color: grayText),
                           ),
                         ],
                       ),
@@ -113,7 +119,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     height: 44,
                     width: 44,
                     decoration: BoxDecoration(
-                        color: Color(0xffFFF0F0),
+                        color: white2Text,
                         image: DecorationImage(
                           image: AssetImage(CoffeeShopAssetsPath.frame19),
                         )),
@@ -122,7 +128,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     height: 44,
                     width: 44,
                     decoration: BoxDecoration(
-                      color: Color(0xffFFF0F0),
+                      color: white2Text,
                       image: DecorationImage(
                         image: AssetImage(CoffeeShopAssetsPath.frame20),
                       ),
@@ -140,7 +146,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   height: 5,
                   width: 500,
                   child: Divider(
-                      height: 4, thickness: 2, color: Color(0xffEAEAEA))),
+                      height: 4, thickness: 2, color: whisperText)),
             ),
             Padding(
               padding: const EdgeInsets.only(
@@ -151,10 +157,10 @@ class _DetailScreenState extends State<DetailScreen> {
               child: Text(
                 "Description",
                 style: TextStyle(
-                  fontFamily: 'Sora',
+                  fontFamily: CoffeeShopAssetsPath.soraFont,
                   fontWeight: FontWeight.w600,
                   fontSize: 16,
-                  color: Color(0xff2F2D2C),
+                  color: darkCharcoalText,
                 ),
               ),
             ),
@@ -166,25 +172,24 @@ class _DetailScreenState extends State<DetailScreen> {
                 child: RichText(
                   text: TextSpan(
                     style: TextStyle(
-                        fontFamily: 'Sora',
-                        fontWeight: FontWeight.w600,
-                        fontSize: 14,
-                        color: Color(0xff9b9b9b),
-                        height: 1.5,
-                      ),
+                      fontFamily: CoffeeShopAssetsPath.soraFont,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                      color: darkGray2Text,
+                      height: 1.5,
+                    ),
                     children: [
                       TextSpan(
                         text:
                             "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo.. ",
                         style: TextStyle(
-                          color: Color(0xff9b9b9b),
+                          color: darkGray2Text,
                         ),
                       ),
                       TextSpan(
                         text: "Read More",
                         style: TextStyle(
-                          color: Color(
-                              0xffC67C4E), // Assuming this is the desired color for "Read More"
+                          color: pinkText,
                         ),
                       ),
                     ],
@@ -192,7 +197,6 @@ class _DetailScreenState extends State<DetailScreen> {
                 ),
               ),
             ),
-
             Padding(
               padding: const EdgeInsets.only(
                 left: 35,
@@ -200,7 +204,11 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
               child: Text(
                 "Size",
-                style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w600, fontSize: 16, color: Color(0xff2F2D2C)),
+                style: TextStyle(
+                    fontFamily: CoffeeShopAssetsPath.soraFont,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                    color: darkCharcoalText),
               ),
             ),
             Row(
@@ -212,11 +220,14 @@ class _DetailScreenState extends State<DetailScreen> {
                   padding: EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Color(0xffDEDEDE))),
+                      border: Border.all(color: gray87Text)),
                   child: Center(
                     child: Text(
                       "S",
-                      style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w400, fontSize: 14),
+                      style: TextStyle(
+                          fontFamily: CoffeeShopAssetsPath.soraFont,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14),
                     ),
                   ),
                 ),
@@ -225,14 +236,18 @@ class _DetailScreenState extends State<DetailScreen> {
                   height: 43,
                   padding: EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Color(0xffC67C4E)),
-                      color: Color(0xffFFF5EE),
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: pinkText),
+                    color: seaShellText,
                   ),
                   child: Center(
                     child: Text(
                       "M",
-                      style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w400, fontSize: 14, color: Color(0xffC67C4E)),
+                      style: TextStyle(
+                          fontFamily: CoffeeShopAssetsPath.soraFont,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: pinkText),
                     ),
                   ),
                 ),
@@ -243,13 +258,17 @@ class _DetailScreenState extends State<DetailScreen> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     border: Border.all(
-                      color: Color(0xffDEDEDE),
+                      color: gray87Text,
                     ),
                   ),
                   child: Center(
                     child: Text(
                       "L",
-                      style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w400, fontSize: 14, color: Color(0xff2F2D2C)),
+                      style: TextStyle(
+                          fontFamily: CoffeeShopAssetsPath.soraFont,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: darkCharcoalText),
                     ),
                   ),
                 ),
@@ -267,10 +286,10 @@ class _DetailScreenState extends State<DetailScreen> {
                       Text(
                         "Price",
                         style: TextStyle(
-                          fontFamily: 'Sora',
+                          fontFamily: CoffeeShopAssetsPath.soraFont,
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
-                          color: Color(0xff9B9B9B),
+                          color: darkGray2Text,
                         ),
                       ),
                       SizedBox(
@@ -279,8 +298,8 @@ class _DetailScreenState extends State<DetailScreen> {
                       Text(
                         "\$ 4.53",
                         style: TextStyle(
-                          fontFamily: 'Sora',
-                          color: Color(0xffC67C4E),
+                          fontFamily: CoffeeShopAssetsPath.soraFont,
+                          color: pinkText,
                           fontWeight: FontWeight.w600,
                           fontSize: 18,
                         ),
@@ -290,23 +309,24 @@ class _DetailScreenState extends State<DetailScreen> {
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) =>
-                              OrderScreen()));
+                          builder: (BuildContext context) => OrderScreen()));
                     },
                     child: Container(
                       height: 55,
                       width: 217,
                       padding: EdgeInsets.all(8.0),
                       decoration: BoxDecoration(
-                          color: Color(0xffC67C4E),
+                          color: pinkButton,
                           borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: Color(0xffDEDEDE))),
+                          border: Border.all(color: gray87Text)),
                       child: Center(
                         child: Text(
                           "Buy Now",
                           style: TextStyle(
-                              fontFamily: 'Sora',
-                              color: Colors.white, fontWeight: FontWeight.w600, fontSize: 16),
+                              fontFamily: CoffeeShopAssetsPath.soraFont,
+                              color: whiteText,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16),
                         ),
                       ),
                     ),
