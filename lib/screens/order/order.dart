@@ -290,11 +290,14 @@ class _OrderScreenState extends State<OrderScreen> {
                             Image.asset(CoffeeShopAssetsPath.discountImage),
                           ],
                         ),
-                        Text(
-                          "1 Discount is applied",
-                          style: TextStyle(
-                            fontFamily: 'Sora',
-                            fontSize: 14, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C),),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 60.0),
+                          child: Text(
+                            "1 Discount is applied",
+                            style: TextStyle(
+                              fontFamily: 'Sora',
+                              fontSize: 14, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C),),
+                          ),
                         ),
                         Image.asset(CoffeeShopAssetsPath.arrow2),
                       ],
@@ -360,7 +363,7 @@ class _OrderScreenState extends State<OrderScreen> {
                           color: Color(0xff2F2D2C),
                       ),
                       children: [
-                        TextSpan(text: "\$ 2.0 "),
+                        TextSpan(text: "\$ 2.0  "),
                         TextSpan(
                           text: "\$ 1.0",
                           style: TextStyle(
