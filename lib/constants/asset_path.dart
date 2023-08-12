@@ -2,6 +2,7 @@ class CoffeeShopAssetsPath {
     static const iconsPath = 'assets/icons';
     static const imagesPath = 'assets/images';
     static const logosPath = 'assets/logos';
+    static const fontsPath = 'assets/fonts';
     
 
     // Onboarding Images //
@@ -41,4 +42,8 @@ class CoffeeShopAssetsPath {
     static const arrow2 = 'assets/images/Arrow 2.png';
     static const moneyImage = 'assets/images/Money.png';
     static const vectorImage = 'assets/images/Vector.png';
+
+    // Fonts //
+    static const soraFont = 'Sora';
+    static const robotoFont = 'Roboto';
 }
