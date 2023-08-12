@@ -1,7 +1,5 @@
 import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:flutter/material.dart';
-
-
 import '../detail/detail.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -240,7 +238,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       ),
                       Container(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 0.5, right: 0.0),
+                          padding: const EdgeInsets.only(left: 0.5, right: 50.0),
                           child: Text(
                             "Cappucino",
                             style: TextStyle(
@@ -251,14 +249,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ),
                         ),
                       ),
-                      Container(
-                        child: Text(
-                          "with Chocolate",
-                          style: TextStyle(
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w400,
-                              fontSize: 12,
-                              color: Color(0xff9B9B9B)),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 45.0),
+                        child: Container(
+                          child: Text(
+                            "with Chocolate",
+                            style: TextStyle(
+                                fontFamily: 'Sora',
+                                fontWeight: FontWeight.w400,
+                                fontSize: 12,
+                                color: Color(0xff9B9B9B)),
+                          ),
                         ),
                       ),
                       Container(
@@ -290,7 +291,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ),
                         ),
                         child: Row(
-                          // mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
@@ -318,7 +318,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       ),
                       Container(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 0.0, right: 35.0),
+                          padding: const EdgeInsets.only(left: 0.0, right: 50.0),
                           child: Text(
                             "Cappucino",
                             style: TextStyle(
@@ -329,14 +329,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ),
                         ),
                       ),
-                      Container(
-                        child: Text(
-                          "with Chocolate",
-                          style: TextStyle(
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w400,
-                              fontSize: 12,
-                              color: Color(0xff9B9B9B)),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 45.0),
+                        child: Container(
+                          child: Text(
+                            "with Chocolate",
+                            style: TextStyle(
+                                fontFamily: 'Sora',
+                                fontWeight: FontWeight.w400,
+                                fontSize: 12,
+                                color: Color(0xff9B9B9B)),
+                          ),
                         ),
                       ),
                       Container(
@@ -379,7 +382,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ),
                       ),
                       child: Row(
-                        // mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
@@ -407,7 +409,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     ),
                     Container(
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 0.5, right: 0.0),
+                        padding: const EdgeInsets.only(left: 0.5, right: 50.0),
                         child: Text(
                           "Cappucino",
                           style: TextStyle(
@@ -418,13 +420,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ),
                       ),
                     ),
-                    Container(
-                      child: Text(
-                        "with Chocolate",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 12,
-                            color: Color(0xff9B9B9B)),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 58.0),
+                      child: Container(
+                        child: Text(
+                          "with Chocolate",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                              color: Color(0xff9B9B9B)),
+                        ),
                       ),
                     ),
                     Container(
@@ -455,7 +460,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ),
                       ),
                       child: Row(
-                        // mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
@@ -481,24 +485,30 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ],
                       ),
                     ),
-                    Container(
-                      child: Text(
-                        "Cappucino",
-                        style: TextStyle(
-                        fontFamily: 'Sora',
-                        fontWeight: FontWeight.w600,
-                        fontSize: 16,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 50.0),
+                      child: Container(
+                        child: Text(
+                          "Cappucino",
+                          style: TextStyle(
+                          fontFamily: 'Sora',
+                          fontWeight: FontWeight.w600,
+                          fontSize: 16,
+                          ),
                         ),
                       ),
                     ),
-                    Container(
-                      child: Text(
-                        "with Chocolate",
-                        style: TextStyle(
-                            fontFamily: 'Sora',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 12,
-                            color: Color(0xff9B9B9B)),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 45.0),
+                      child: Container(
+                        child: Text(
+                          "with Chocolate",
+                          style: TextStyle(
+                              fontFamily: 'Sora',
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                              color: Color(0xff9B9B9B)),
+                        ),
                       ),
                     ),
                     Container(
