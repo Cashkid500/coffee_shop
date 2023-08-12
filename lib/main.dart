@@ -45,37 +45,37 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 10.0,
+                      height: 80.0,
                     ),
                     SizedBox(
-                      width: 500,
-                      child: Center(
-                        child: Text(
-                          'Coffee so good, your taste buds will love it.',
-                          style: TextStyle(
-                                color: Color(0xffFFFFFF),
-                                fontSize: 34.0,
-                                fontWeight: FontWeight.w600,
-                                fontFamily: 'Sora',),
-                        ),
+                      width: 260,
+                      child: Text(
+                        'Coffee so good, your taste buds will love it.',
+                        style: TextStyle(
+                            color: Color(0xffFFFFFF),
+                            fontFamily: 'Sora',
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.w600),
+                        textAlign: TextAlign.center,
                       ),
                     ),
                     SizedBox(
                       height: 20.0,
                     ),
-                    Center(
+                    SizedBox(
+                      width: 260,
                       child: Text(
                         'The best grain, the finest roast, the powerful flavor.',
                         style: TextStyle(
-                              fontSize: 14.0,
-                              fontFamily: 'Sora',
-                              fontWeight: FontWeight.w400,
-                              color: Color(0xffA9A9A9),
-                              letterSpacing: 1.0),
+                            color: Color(0xffA9A9A9),
+                            fontFamily: 'Sora',
+                            fontSize: 14.0,
+                            fontWeight: FontWeight.w400),
+                        textAlign: TextAlign.center,
                       ),
                     ),
                     SizedBox(
-                      height: 25.0,
+                      height: 30.0,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                                   style: TextStyle(
                                       fontFamily: 'Roboto',
                                       fontSize: 20,
-                                      fontWeight: FontWeight.w500,
+                                      fontWeight: FontWeight.w600,
                                       color: Colors.grey,
                                     ),
                                 ),
