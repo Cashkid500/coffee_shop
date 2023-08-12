@@ -1,5 +1,6 @@
 import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:coffee_shop/constants/color_constants.dart';
+import 'package:coffee_shop/constants/text_constants.dart';
 import 'package:flutter/material.dart';
 import '../order/order.dart';
 
@@ -29,7 +30,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 children: [
                   Image.asset(CoffeeShopAssetsPath.arrowImage),
                   Text(
-                    "Detail",
+                    CoffeeShopText.detText,
                     style: TextStyle(
                       fontFamily: CoffeeShopAssetsPath.soraFont,
                       fontWeight: FontWeight.w600,
@@ -64,7 +65,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           left: 5,
                         ),
                         child: Text(
-                          "Cappucino",
+                          CoffeeShopText.cap2Text,
                           style: TextStyle(
                             fontFamily: CoffeeShopAssetsPath.soraFont,
                             fontWeight: FontWeight.w600,
@@ -80,7 +81,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           bottom: 15,
                         ),
                         child: Text(
-                          "with Chocolate",
+                          CoffeeShopText.withChocolateText,
                           style: TextStyle(
                             fontFamily: CoffeeShopAssetsPath.soraFont,
                             color: darkGray2Text,
@@ -96,7 +97,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           ),
                           Image.asset(CoffeeShopAssetsPath.ratingImage),
                           Text(
-                            "4.8",
+                            CoffeeShopText.fourPointEightText,
                             style: TextStyle(
                                 fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontSize: 16,
@@ -104,7 +105,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                 color: darkCharcoalText),
                           ),
                           Text(
-                            "(230)",
+                            CoffeeShopText.bracText,
                             style: TextStyle(
                                 fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontSize: 12,
@@ -155,7 +156,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 bottom: 20,
               ),
               child: Text(
-                "Description",
+                CoffeeShopText.descripText,
                 style: TextStyle(
                   fontFamily: CoffeeShopAssetsPath.soraFont,
                   fontWeight: FontWeight.w600,
@@ -181,13 +182,13 @@ class _DetailScreenState extends State<DetailScreen> {
                     children: [
                       TextSpan(
                         text:
-                            "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo.. ",
+                            CoffeeShopText.capLongText,
                         style: TextStyle(
                           color: darkGray2Text,
                         ),
                       ),
                       TextSpan(
-                        text: "Read More",
+                        text: CoffeeShopText.readMoreText,
                         style: TextStyle(
                           color: pinkText,
                         ),
@@ -203,7 +204,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 bottom: 25,
               ),
               child: Text(
-                "Size",
+                CoffeeShopText.sizeText,
                 style: TextStyle(
                     fontFamily: CoffeeShopAssetsPath.soraFont,
                     fontWeight: FontWeight.w600,
@@ -223,7 +224,7 @@ class _DetailScreenState extends State<DetailScreen> {
                       border: Border.all(color: gray87Text)),
                   child: Center(
                     child: Text(
-                      "S",
+                      CoffeeShopText.sText,
                       style: TextStyle(
                           fontFamily: CoffeeShopAssetsPath.soraFont,
                           fontWeight: FontWeight.w400,
@@ -242,7 +243,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   ),
                   child: Center(
                     child: Text(
-                      "M",
+                      CoffeeShopText.mText,
                       style: TextStyle(
                           fontFamily: CoffeeShopAssetsPath.soraFont,
                           fontWeight: FontWeight.w400,
@@ -263,7 +264,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   ),
                   child: Center(
                     child: Text(
-                      "L",
+                      CoffeeShopText.lText,
                       style: TextStyle(
                           fontFamily: CoffeeShopAssetsPath.soraFont,
                           fontWeight: FontWeight.w400,
@@ -284,7 +285,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Price",
+                        CoffeeShopText.priceText,
                         style: TextStyle(
                           fontFamily: CoffeeShopAssetsPath.soraFont,
                           fontSize: 14,
@@ -296,7 +297,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         height: 8,
                       ),
                       Text(
-                        "\$ 4.53",
+                        CoffeeShopText.capPriceText,
                         style: TextStyle(
                           fontFamily: CoffeeShopAssetsPath.soraFont,
                           color: pinkText,
@@ -321,7 +322,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           border: Border.all(color: gray87Text)),
                       child: Center(
                         child: Text(
-                          "Buy Now",
+                          CoffeeShopText.buttonText,
                           style: TextStyle(
                               fontFamily: CoffeeShopAssetsPath.soraFont,
                               color: whiteText,

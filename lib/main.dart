@@ -1,5 +1,6 @@
 import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:coffee_shop/constants/color_constants.dart';
+import 'package:coffee_shop/constants/text_constants.dart';
 import 'package:coffee_shop/screens/dashboard/dashboard.dart';
 import 'package:flutter/material.dart';
 
@@ -51,7 +52,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       width: 260,
                       child: Text(
-                        'Coffee so good, your taste buds will love it.',
+                        CoffeeShopText.onboardingText,
                         style: TextStyle(
                             color: whiteText,
                             fontFamily: CoffeeShopAssetsPath.soraFont,
@@ -66,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       width: 260,
                       child: Text(
-                        'The best grain, the finest roast, the powerful flavor.',
+                        CoffeeShopText.onboarding2Text,
                         style: TextStyle(
                             color: darkGrayText,
                             fontFamily: CoffeeShopAssetsPath.soraFont,
@@ -104,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 10),
                                 child: Text(
-                                  'Continue with Google',
+                                  CoffeeShopText.googleMessage,
                                   style: TextStyle(
                                       fontFamily: CoffeeShopAssetsPath.robotoFont,
                                       fontSize: 20,

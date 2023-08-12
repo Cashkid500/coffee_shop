@@ -1,5 +1,6 @@
 import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:coffee_shop/constants/color_constants.dart';
+import 'package:coffee_shop/constants/text_constants.dart';
 import 'package:flutter/material.dart';
 import '../detail/detail.dart';
 
@@ -12,10 +13,10 @@ class DashboardScreen extends StatefulWidget {
 
 class _DashboardScreenState extends State<DashboardScreen> {
   List<String> items = [
-    "Cappuccino",
-    "Machiato",
-    "Latte",
-    "Americano",
+    CoffeeShopText.capText,
+    CoffeeShopText.machText,
+    CoffeeShopText.lattText,
+    CoffeeShopText.ameText,
   ];
   int _selectedIndex = 0;
   int current = 0;
@@ -50,7 +51,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                                 child: Container(
                                   child: Text(
-                                    "Location",
+                                    CoffeeShopText.locText,
                                     style: TextStyle(
                                         fontFamily: CoffeeShopAssetsPath.soraFont,
                                         fontSize: 12,
@@ -63,7 +64,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 child: Row(
                                     children: [
                                       Text(
-                                        "Bilzen,Tanjungbalai",
+                                        CoffeeShopText.bilText,
                                         style: TextStyle(
                                             fontFamily: CoffeeShopAssetsPath.soraFont,
                                             fontSize: 14,
@@ -71,7 +72,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                             fontWeight: FontWeight.w600,
                                           ),
                                       ),
-                                      SizedBox(width: 1), // Add some spacing between the text and image
+                                      SizedBox(width: 1),
                                       Image.asset(
                                         CoffeeShopAssetsPath.arrowDown,
                                       ),
@@ -102,7 +103,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             decoration: InputDecoration(
                               contentPadding: EdgeInsets.all(10),
                               isCollapsed: true,
-                              labelText: 'Search coffee',
+                              labelText: CoffeeShopText.searchText,
                               labelStyle: TextStyle(
                                 fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontSize: 14,
@@ -225,7 +226,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               padding:
                                   const EdgeInsets.only(left: 10.0, top: 8.0),
                               child: Text(
-                                '4.8',
+                                CoffeeShopText.fourPointEightText,
                                 style: TextStyle(
                                   fontFamily: CoffeeShopAssetsPath.soraFont,
                                   fontWeight: FontWeight.w600,
@@ -241,7 +242,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         child: Padding(
                           padding: const EdgeInsets.only(left: 0.5, right: 50.0),
                           child: Text(
-                            "Cappucino",
+                            CoffeeShopText.capText,
                             style: TextStyle(
                               fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
@@ -254,7 +255,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         padding: const EdgeInsets.only(right: 45.0),
                         child: Container(
                           child: Text(
-                            "with Chocolate",
+                            CoffeeShopText.withChocolateText,
                             style: TextStyle(
                                 fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w400,
@@ -267,7 +268,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                            Text("\$ 4.53",
+                            Text(CoffeeShopText.capPriceText,
                             style: TextStyle(
                                 fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w600,
@@ -305,7 +306,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               padding:
                                   const EdgeInsets.only(left: 10.0, top: 8.0),
                               child: Text(
-                                '4.8',
+                                CoffeeShopText.fourPointEightText,
                                 style: TextStyle(
                                   fontFamily: CoffeeShopAssetsPath.soraFont,
                                   fontWeight: FontWeight.w600,
@@ -321,7 +322,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         child: Padding(
                           padding: const EdgeInsets.only(left: 0.0, right: 50.0),
                           child: Text(
-                            "Cappucino",
+                            CoffeeShopText.capText,
                             style: TextStyle(
                               fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
@@ -334,7 +335,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         padding: const EdgeInsets.only(right: 45.0),
                         child: Container(
                           child: Text(
-                            "with Chocolate",
+                            CoffeeShopText.withChocolateText,
                             style: TextStyle(
                                 fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w400,
@@ -346,7 +347,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       Container(
                         child: Row(
                           children: [
-                            Text("\$ 4.53",
+                            Text(CoffeeShopText.capPriceText,
                             style: TextStyle(
                               fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
@@ -396,7 +397,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding:
                                 const EdgeInsets.only(left: 10.0, top: 8.0),
                             child: Text(
-                              '4.5',
+                              CoffeeShopText.fourPointFiveText,
                               style: TextStyle(
                                 fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w600,
@@ -412,7 +413,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 0.5, right: 50.0),
                         child: Text(
-                          "Cappucino",
+                          CoffeeShopText.capText,
                           style: TextStyle(
                             fontFamily: CoffeeShopAssetsPath.soraFont,
                             fontWeight: FontWeight.w600,
@@ -425,7 +426,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       padding: const EdgeInsets.only(right: 58.0),
                       child: Container(
                         child: Text(
-                          "with Chocolate",
+                          CoffeeShopText.withChocolateText,
                           style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 12,
@@ -436,7 +437,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     Container(
                       child: Row(
                         children: [
-                          Text("\$ 4.53",
+                          Text(CoffeeShopText.capPriceText,
                           style: TextStyle(
                               fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
@@ -474,7 +475,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding:
                                 const EdgeInsets.only(left: 10.0, top: 8.0),
                             child: Text(
-                              '4.0',
+                              CoffeeShopText.fourPointZeroText,
                               style: TextStyle(
                                 fontFamily: CoffeeShopAssetsPath.soraFont,
                                 fontWeight: FontWeight.w600,
@@ -490,7 +491,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       padding: const EdgeInsets.only(right: 50.0),
                       child: Container(
                         child: Text(
-                          "Cappucino",
+                          CoffeeShopText.capText,
                           style: TextStyle(
                           fontFamily: CoffeeShopAssetsPath.soraFont,
                           fontWeight: FontWeight.w600,
@@ -503,7 +504,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       padding: const EdgeInsets.only(right: 45.0),
                       child: Container(
                         child: Text(
-                          "with Chocolate",
+                          CoffeeShopText.withChocolateText,
                           style: TextStyle(
                               fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w400,
@@ -515,7 +516,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     Container(
                       child: Row(
                         children: [
-                          Text("\$ 4.53",
+                          Text(CoffeeShopText.capPriceText,
                           style: TextStyle(
                               fontFamily: CoffeeShopAssetsPath.soraFont,
                               fontWeight: FontWeight.w600,
