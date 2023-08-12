@@ -226,7 +226,9 @@ class _DetailScreenState extends State<DetailScreen> {
                   padding: EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Color(0xffC67C4E))),
+                      border: Border.all(color: Color(0xffC67C4E)),
+                      color: Color(0xffFFF5EE),
+                  ),
                   child: Center(
                     child: Text(
                       "M",
@@ -272,10 +274,10 @@ class _DetailScreenState extends State<DetailScreen> {
                         ),
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 8,
                       ),
                       Text(
-                        "\$4.53",
+                        "\$ 4.53",
                         style: TextStyle(
                           fontFamily: 'Sora',
                           color: Color(0xffC67C4E),
