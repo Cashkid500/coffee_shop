@@ -1,6 +1,6 @@
+import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:coffee_shop/screens/dashboard/dashboard.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
               width: MediaQuery.of(context).size.width,
               height: 450,
               child: Image.asset(
-                'assets/images/Coffee.png',
+                CoffeeShopAssetsPath.coffeeimage,
               ),
             ),
             Positioned(
@@ -52,12 +52,11 @@ class _HomePageState extends State<HomePage> {
                       child: Center(
                         child: Text(
                           'Coffee so good, your taste buds will love it.',
-                          style: GoogleFonts.sora(
-                            textStyle: TextStyle(
+                          style: TextStyle(
                                 color: Color(0xffFFFFFF),
                                 fontSize: 34.0,
-                                fontWeight: FontWeight.w600),
-                          ),
+                                fontWeight: FontWeight.w600,
+                                fontFamily: 'Sora',),
                         ),
                       ),
                     ),
@@ -67,13 +66,12 @@ class _HomePageState extends State<HomePage> {
                     Center(
                       child: Text(
                         'The best grain, the finest roast, the powerful flavor.',
-                        style: GoogleFonts.sora(
-                          textStyle: TextStyle(
+                        style: TextStyle(
                               fontSize: 14.0,
+                              fontFamily: 'Sora',
                               fontWeight: FontWeight.w400,
                               color: Color(0xffA9A9A9),
                               letterSpacing: 1.0),
-                        ),
                       ),
                     ),
                     SizedBox(
@@ -101,18 +99,17 @@ class _HomePageState extends State<HomePage> {
                           padding: const EdgeInsets.only(left: 30, bottom: 10),
                           child: Row(
                             children: [
-                              Image.asset('assets/images/Google.png'),
+                              Image.asset(CoffeeShopAssetsPath.googleimage),
                               Padding(
                                 padding: const EdgeInsets.only(left: 10),
                                 child: Text(
                                   'Continue with Google',
-                                  style: GoogleFonts.roboto(
-                                    textStyle: TextStyle(
+                                  style: TextStyle(
+                                      fontFamily: 'Roboto',
                                       fontSize: 20,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.grey,
                                     ),
-                                  ),
                                 ),
                               ),
                             ],

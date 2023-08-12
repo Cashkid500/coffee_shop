@@ -1,5 +1,6 @@
+import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 class OrderScreen extends StatefulWidget {
   const OrderScreen({Key? key}) : super(key: key);
 
@@ -31,12 +32,11 @@ class _OrderScreenState extends State<OrderScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Image.asset("assets/images/Arrow.png"),
+                    Image.asset(CoffeeShopAssetsPath.arrowImage),
                     const Spacer(),
                     Text(
                       "Order",
-                      style: GoogleFonts.sora(
-                          textStyle: TextStyle(fontWeight: FontWeight.w600, fontSize: 18, color: Color(0xff2F2D2C))),
+                      style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w600, fontSize: 18, color: Color(0xff2F2D2C)),
                     ),
                     const Spacer(),
                   ],
@@ -62,12 +62,12 @@ class _OrderScreenState extends State<OrderScreen> {
                         child: Center(
                           child: Text(
                             "Deliver",
-                            style: GoogleFonts.sora(
-                              textStyle: TextStyle(
+                            style: TextStyle(
+                              fontFamily: 'Sora',
                               color: Colors.white,
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
-                            )),
+                            ),
                           ),
                         ),
                       ),
@@ -78,9 +78,9 @@ class _OrderScreenState extends State<OrderScreen> {
                         child: Center(
                           child: Text(
                             "Pick Up",
-                            style: GoogleFonts.sora(
-                                textStyle: TextStyle(
-                                fontWeight: FontWeight.w400, fontSize: 16, color: Color(0xff2F2D2C))),
+                            style: TextStyle(
+                                fontFamily: 'Sora',
+                                fontWeight: FontWeight.w400, fontSize: 16, color: Color(0xff2F2D2C)),
                           ),
                         ),
                       ),
@@ -92,18 +92,17 @@ class _OrderScreenState extends State<OrderScreen> {
                 padding: const EdgeInsets.only(top: 30, bottom: 15),
                 child: Text(
                   "Delivery Address",
-                  style: GoogleFonts.sora(
-                      textStyle: TextStyle(
+                  style: TextStyle(
+                    fontFamily: 'Sora',
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
                     color: Color(0xff2F2D2C),
-                  )),
+                  ),
                 ),
               ),
               Text(
                 "JI. Kpg Sutoyo",
-                style: GoogleFonts.sora(
-                  textStyle: TextStyle(fontWeight: FontWeight.w600, fontSize: 14, color: Color(0xff303336))),
+                style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w600, fontSize: 14, color: Color(0xff303336)),
               ),
               Padding(
                 padding: const EdgeInsets.only(
@@ -112,12 +111,12 @@ class _OrderScreenState extends State<OrderScreen> {
                 ),
                 child: Text(
                   "Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai.",
-                  style: GoogleFonts.sora(
-                    textStyle: TextStyle(
+                  style: TextStyle(
+                    fontFamily: 'Sora',
                     color: Color(0xff808080),
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
-                  )),
+                  ),
                 ),
               ),
               Padding(
@@ -140,17 +139,17 @@ class _OrderScreenState extends State<OrderScreen> {
                               padding: const EdgeInsets.only(right: 5),
                               child: Row(
                                 children: [
-                                  Image.asset("assets/images/Edit.png"),
+                                  Image.asset(CoffeeShopAssetsPath.editImage),
                                   SizedBox(
                                   width: 5,
                                   ),
                                   Center(
                                     child: Text(
                                       "Edit Address",
-                                      style: GoogleFonts.sora(
-                                          textStyle: TextStyle(
+                                      style: TextStyle(
+                                          fontFamily: 'Sora',
                                           fontSize: 12,
-                                          fontWeight: FontWeight.w400, color: Color(0xff303336))),
+                                          fontWeight: FontWeight.w400, color: Color(0xff303336)),
                                     ),
                                   ),
                                 ],
@@ -169,15 +168,15 @@ class _OrderScreenState extends State<OrderScreen> {
                       child: Center(
                         child: Row(
                           children: [
-                            Image.asset("assets/images/Note.png"),
+                            Image.asset(CoffeeShopAssetsPath.noteImage),
                             SizedBox(
                               width: 5,
                             ),
                             Text(
                               "Add Note",
-                              style: GoogleFonts.sora(
-                                  textStyle: TextStyle(
-                                  fontSize: 12, fontWeight: FontWeight.w400, color:Color(0xff303336))),
+                              style: TextStyle(
+                                  fontFamily: 'Sora',
+                                  fontSize: 12, fontWeight: FontWeight.w400, color:Color(0xff303336)),
                             ),
                           ],
                         ),
@@ -189,7 +188,7 @@ class _OrderScreenState extends State<OrderScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Image.asset("assets/images/Cappucino 6.png"),
+                  Image.asset(CoffeeShopAssetsPath.cappucino6),
                   SizedBox(width: 20,),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -197,21 +196,21 @@ class _OrderScreenState extends State<OrderScreen> {
                     children: [
                       Text(
                         "Cappucino",
-                        style: GoogleFonts.sora(
-                          textStyle: TextStyle(
+                        style: TextStyle(
+                          fontFamily: 'Sora',
                           fontWeight: FontWeight.w600,
                           fontSize: 16,
                           color: Color(0xff2F2D2C),
-                        )),
+                        ),
                       ),
                       SizedBox(height: 5,),
                       Text(
                         "with Chocolate",
-                        style: GoogleFonts.sora(
-                            textStyle: TextStyle(
+                        style: TextStyle(
+                            fontFamily: 'Sora',
                             fontWeight: FontWeight.w400,
                             fontSize: 12,
-                            color: Color(0xff9B9B9B))),
+                            color: Color(0xff9B9B9B)),
                       )
                     ],
                   ),
@@ -234,9 +233,11 @@ class _OrderScreenState extends State<OrderScreen> {
                       ),
                       Text(
                         "1",
-                        style: GoogleFonts.sora(
-                            textStyle: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 15, color: Color(0xff2F2D2C))),
+                        style: TextStyle(
+                            fontFamily: 'Sora',
+                            fontWeight: FontWeight.w600, 
+                            fontSize: 15, 
+                            color: Color(0xff2F2D2C)),
                       ),
                       SizedBox(
                         width: 10,
@@ -287,16 +288,16 @@ class _OrderScreenState extends State<OrderScreen> {
                       children: [
                         Row(
                           children: [
-                            Image.asset("assets/images/Discount.png"),
+                            Image.asset(CoffeeShopAssetsPath.discountImage),
                           ],
                         ),
                         Text(
                           "1 Discount is applied",
-                          style: GoogleFonts.sora(
-                            textStyle: TextStyle(
-                            fontSize: 14, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C)),),
+                          style: TextStyle(
+                            fontFamily: 'Sora',
+                            fontSize: 14, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C),),
                         ),
-                        Image.asset("assets/images/Arrow 2.png"),
+                        Image.asset(CoffeeShopAssetsPath.arrow2),
                       ],
                     ),
                   ),
@@ -307,8 +308,7 @@ class _OrderScreenState extends State<OrderScreen> {
               ),
               Text(
                 "Payment Summary",
-                style: GoogleFonts.sora(
-                textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C))),
+                style: TextStyle(fontFamily: 'Sora', fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C)),
               ),
               SizedBox(
                 height: 15,
@@ -318,21 +318,21 @@ class _OrderScreenState extends State<OrderScreen> {
                 children: [
                   Text(
                     "Price",
-                    style: GoogleFonts.sora(
-                    textStyle: TextStyle(
+                    style: TextStyle(
+                    fontFamily: 'Sora',
                     fontWeight: FontWeight.w400,
                     fontSize: 14,
                     color: Color(0xff2F2D2C),
-                    )),
+                    ),
                   ),
                   Text(
                     "\$ 4.53",
-                    style: GoogleFonts.sora(
-                      textStyle: TextStyle(
+                    style: TextStyle(
+                      fontFamily: 'Sora',
                       fontWeight: FontWeight.w600,
                       fontSize: 14,
                       color: Color(0xff2F2D2C),
-                    )),
+                    ),
                   ),
                 ],
               ),
@@ -344,34 +344,33 @@ class _OrderScreenState extends State<OrderScreen> {
                 children: [
                   Text(
                     "Delivery Fee",
-                    style: GoogleFonts.sora(
-                    textStyle: TextStyle(
+                    style: TextStyle(
+                    fontFamily: 'Sora',
                     fontWeight: FontWeight.w400,
                     fontSize: 14,
                     color: Color(0xff2F2D2C),
-                    )),
+                    ),
                   ),
                   RichText(
                     text: TextSpan(
-                      style: GoogleFonts.sora(
-                        textStyle: TextStyle(
+                      style: TextStyle(
+                          fontFamily: 'Sora',
                           decoration: TextDecoration.lineThrough,
                           fontWeight: FontWeight.w400,
                           fontSize: 14,
                           color: Color(0xff2F2D2C),
-                        ),
                       ),
                       children: [
                         TextSpan(text: "\$ 2.0 "),
                         TextSpan(
                           text: "\$ 1.0",
-                          style: GoogleFonts.sora(
-                          textStyle: TextStyle(
+                          style: TextStyle(
+                            fontFamily: 'Sora',
                             decoration: TextDecoration.none,
                           fontWeight: FontWeight.w600,
                           fontSize: 14,
                           color: Color(0xff2F2D2C),
-                          )),
+                          ),
                         ),
                       ],
                     ),
@@ -393,21 +392,20 @@ class _OrderScreenState extends State<OrderScreen> {
                 children: [
                   Text(
                     "Total Payment",
-                    style: GoogleFonts.sora(
-                    textStyle: TextStyle(
+                    style: TextStyle(
+                    fontFamily: 'Sora',
                     fontWeight: FontWeight.w400,
                     fontSize: 14,
                     color: Color(0xff2F2D2C),
-                    )),
+                    ),
                   ),
                   Text(
                     "\$ 5.53",
-                    style: GoogleFonts.sora(
-                    textStyle: TextStyle(
+                    style: TextStyle(
+                    fontFamily: 'Sora',
                     fontWeight: FontWeight.w600,
                     fontSize: 14,
                     color: Color(0xff2F2D2C)),
-                    ),
                   ),
                 ],
               ),
@@ -419,7 +417,7 @@ class _OrderScreenState extends State<OrderScreen> {
                 children: [
                   Row(
                     children: [
-                      Image.asset("assets/images/Money.png"),
+                      Image.asset(CoffeeShopAssetsPath.moneyImage),
                       SizedBox(
                         width: 20,
                       ),
@@ -433,11 +431,11 @@ class _OrderScreenState extends State<OrderScreen> {
                         child: Center(
                           child: Text(
                             'Cash',
-                            style: GoogleFonts.sora(
-                              textStyle: TextStyle(
+                            style: TextStyle(
+                              fontFamily: 'Sora',
                               fontWeight: FontWeight.w400,
                               fontSize: 12,
-                              color: Color(0xffffffff))),
+                              color: Color(0xffffffff)),
                           ),
                         ),
                       ),
@@ -445,15 +443,15 @@ class _OrderScreenState extends State<OrderScreen> {
                         width: 15,
                       ),
                       Text("\$ 5.53",
-                        style: GoogleFonts.sora(
-                        textStyle: TextStyle(
+                        style: TextStyle(
+                        fontFamily: 'Sora',
                         fontWeight: FontWeight.w400,
                         fontSize: 12,
-                        color: Color(0xff2F2D2C))),
+                        color: Color(0xff2F2D2C)),
                       ),
                     ],
                   ),
-                  Image.asset("assets/images/Vector.png")
+                  Image.asset(CoffeeShopAssetsPath.vectorImage)
                 ],
               ),
               SizedBox(
@@ -468,11 +466,11 @@ class _OrderScreenState extends State<OrderScreen> {
                 child: Center(
                   child: Text(
                     "Order",
-                    style: GoogleFonts.sora(
-                    textStyle: TextStyle(
+                    style: TextStyle(
+                        fontFamily: 'Sora',
                         fontWeight: FontWeight.w600,
                         color: Color(0xffffffff),
-                        fontSize: 16)) ,
+                        fontSize: 16) ,
                   ),
                 ),
               ),

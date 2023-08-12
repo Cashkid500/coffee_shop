@@ -1,5 +1,6 @@
+import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 
 import '../detail/detail.dart';
 
@@ -51,11 +52,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 child: Container(
                                   child: Text(
                                     "Location",
-                                    style: GoogleFonts.sora(
-                                        textStyle: TextStyle(
+                                    style: TextStyle(
+                                        fontFamily: 'Sora',
                                         fontSize: 12,
                                         color: Colors.white,
-                                        fontWeight: FontWeight.w400)),
+                                        fontWeight: FontWeight.w400),
                                   ),
                                 ),
                               ),
@@ -64,17 +65,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                     children: [
                                       Text(
                                         "Bilzen,Tanjungbalai",
-                                        style: GoogleFonts.sora(
-                                          textStyle: TextStyle(
+                                        style: TextStyle(
+                                            fontFamily: 'Sora',
                                             fontSize: 14,
                                             color: Colors.white,
                                             fontWeight: FontWeight.w600,
                                           ),
-                                        ),
                                       ),
                                       SizedBox(width: 1), // Add some spacing between the text and image
                                       Image.asset(
-                                        "assets/images/Arrow Down.png",
+                                        CoffeeShopAssetsPath.arrowDown,
                                       ),
                                     ],
                                   ),
@@ -90,7 +90,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ),
                           child: Container(
                             alignment: Alignment.topRight,
-                            child: Image.asset("assets/images/Girl.png"),
+                            child: Image.asset(CoffeeShopAssetsPath.girlImage),
                           ),
                         )
                       ],
@@ -105,15 +105,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               isCollapsed: true,
                               labelText: 'Search coffee',
                               labelStyle: TextStyle(
+                                fontFamily: 'Sora',
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                                 color: Color(0xff989898),
                               ),
                               prefixIcon: Image.asset(
-                                "assets/images/Search.png",
+                                CoffeeShopAssetsPath.searchImage,
                               ),
                               suffixIcon:
-                                  Image.asset("assets/images/Frame 10.png"),
+                                  Image.asset(CoffeeShopAssetsPath.frame10),
                               filled: true,
                               fillColor: Color(0xff313131),
                               enabledBorder: OutlineInputBorder(
@@ -130,7 +131,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               Positioned(
                 bottom: -100,
                 child: Container(
-                  child: Image.asset("assets/images/Frame 8.png"),
+                  child: Image.asset(CoffeeShopAssetsPath.frame8),
                 ),
               ),
             ],
@@ -167,7 +168,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             child: Center(
                               child: Text(
                                 items[index],
-                                style: GoogleFonts.sora(
+                                style: TextStyle(
+                                  fontFamily: 'Sora',
                                   fontWeight: current == index
                                       ? FontWeight.w600
                                       : FontWeight.w400,
@@ -206,7 +208,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         width: 155,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage("assets/images/Cappucino.png"),
+                            image: AssetImage(CoffeeShopAssetsPath.cappucinoImage),
                           ),
                         ),
                         child: Row(
@@ -217,7 +219,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               padding:
                                   const EdgeInsets.only(left: 23.0, top: 8.0),
                               child: Image.asset(
-                                "assets/images/Star.png",
+                                CoffeeShopAssetsPath.starImage,
                               ),
                             ),
                             Padding(
@@ -226,6 +228,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               child: Text(
                                 '4.8',
                                 style: TextStyle(
+                                  fontFamily: 'Sora',
                                   fontWeight: FontWeight.w600,
                                   fontSize: 13,
                                   color: Colors.white,
@@ -240,22 +243,22 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           padding: const EdgeInsets.only(left: 0.5, right: 0.0),
                           child: Text(
                             "Cappucino",
-                            style: GoogleFonts.sora(
-                              textStyle: TextStyle(
+                            style: TextStyle(
+                              fontFamily: 'Sora',
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
-                            )),
+                            ),
                           ),
                         ),
                       ),
                       Container(
                         child: Text(
                           "with Chocolate",
-                          style: GoogleFonts.sora(
-                              textStyle: TextStyle(
+                          style: TextStyle(
+                              fontFamily: 'Sora',
                               fontWeight: FontWeight.w400,
                               fontSize: 12,
-                              color: Color(0xff9B9B9B))),
+                              color: Color(0xff9B9B9B)),
                         ),
                       ),
                       Container(
@@ -263,14 +266,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Text("\$ 4.53",
-                            style: GoogleFonts.sora(
-                                textStyle: TextStyle(
+                            style: TextStyle(
+                                fontFamily: 'Sora',
                                 fontWeight: FontWeight.w600,
                                 fontSize: 18,
-                                color: Color(0xff2F4B4E))),
+                                color: Color(0xff2F4B4E)),
                               ),
                             SizedBox(width: 30.0,),
-                            Image.asset("assets/images/Frame 17.png"),
+                            Image.asset(CoffeeShopAssetsPath.frame17),
                           ],
                         ),
                       )
@@ -283,7 +286,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         width: 155,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage("assets/images/Cappucino 2.png"),
+                            image: AssetImage(CoffeeShopAssetsPath.cappucino2),
                           ),
                         ),
                         child: Row(
@@ -294,7 +297,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               padding:
                                   const EdgeInsets.only(left: 23.0, top: 8.0),
                               child: Image.asset(
-                                "assets/images/Star.png",
+                                CoffeeShopAssetsPath.starImage
                               ),
                             ),
                             Padding(
@@ -303,6 +306,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               child: Text(
                                 '4.8',
                                 style: TextStyle(
+                                  fontFamily: 'Sora',
                                   fontWeight: FontWeight.w600,
                                   fontSize: 13,
                                   color: Colors.white,
@@ -317,35 +321,35 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           padding: const EdgeInsets.only(left: 0.0, right: 35.0),
                           child: Text(
                             "Cappucino",
-                            style: GoogleFonts.sora(
-                              textStyle: TextStyle(
+                            style: TextStyle(
+                              fontFamily: 'Sora',
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
-                            )),
+                            ),
                           ),
                         ),
                       ),
                       Container(
                         child: Text(
                           "with Chocolate",
-                          style: GoogleFonts.sora(
-                              textStyle: TextStyle(
+                          style: TextStyle(
+                              fontFamily: 'Sora',
                               fontWeight: FontWeight.w400,
                               fontSize: 12,
-                              color: Color(0xff9B9B9B))),
+                              color: Color(0xff9B9B9B)),
                         ),
                       ),
                       Container(
                         child: Row(
                           children: [
                             Text("\$ 4.53",
-                            style: GoogleFonts.sora(
-                              textStyle: TextStyle(
+                            style: TextStyle(
+                              fontFamily: 'Sora',
                               fontWeight: FontWeight.w600,
                               fontSize: 18,
-                              color: Color(0xff2F4B4E))),),
+                              color: Color(0xff2F4B4E)),),
                             SizedBox(width: 30.0,),
-                            Image.asset("assets/images/Frame 17.png"),
+                            Image.asset(CoffeeShopAssetsPath.frame17),
                           ],
                         ),
                       )
@@ -371,7 +375,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       width: 155,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage("assets/images/Cappucino 3.png"),
+                          image: AssetImage(CoffeeShopAssetsPath.cappucino3),
                         ),
                       ),
                       child: Row(
@@ -382,7 +386,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding:
                                 const EdgeInsets.only(left: 23.0, top: 8.0),
                             child: Image.asset(
-                              "assets/images/Star.png",
+                              CoffeeShopAssetsPath.starImage,
                             ),
                           ),
                           Padding(
@@ -391,6 +395,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             child: Text(
                               '4.5',
                               style: TextStyle(
+                                fontFamily: 'Sora',
                                 fontWeight: FontWeight.w600,
                                 fontSize: 13,
                                 color: Colors.white,
@@ -405,11 +410,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         padding: const EdgeInsets.only(left: 0.5, right: 0.0),
                         child: Text(
                           "Cappucino",
-                          style: GoogleFonts.sora(
-                            textStyle: TextStyle(
+                          style: TextStyle(
+                            fontFamily: 'Sora',
                             fontWeight: FontWeight.w600,
                             fontSize: 16,
-                          )),
+                          ),
                         ),
                       ),
                     ),
@@ -426,14 +431,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       child: Row(
                         children: [
                           Text("\$ 4.53",
-                          style: GoogleFonts.sora(
-                                  textStyle: TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18,
-                                      color: Color(0xff2F4B4E))),
+                          style: TextStyle(
+                              fontFamily: 'Sora',
+                              fontWeight: FontWeight.w600,
+                              fontSize: 18,
+                              color: Color(0xff2F4B4E)),
                             ),
                             SizedBox(width: 30.0,),
-                          Image.asset("assets/images/Frame 17.png"),
+                          Image.asset(CoffeeShopAssetsPath.frame17),
                         ],
                       ),
                     )
@@ -446,7 +451,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       width: 155,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage("assets/images/Cappucino 4.png"),
+                          image: AssetImage(CoffeeShopAssetsPath.cappucino4),
                         ),
                       ),
                       child: Row(
@@ -457,7 +462,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding:
                                 const EdgeInsets.only(left: 23.0, top: 8.0),
                             child: Image.asset(
-                              "assets/images/Star.png",
+                              CoffeeShopAssetsPath.starImage
                             ),
                           ),
                           Padding(
@@ -466,6 +471,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             child: Text(
                               '4.0',
                               style: TextStyle(
+                                fontFamily: 'Sora',
                                 fontWeight: FontWeight.w600,
                                 fontSize: 13,
                                 color: Colors.white,
@@ -478,35 +484,35 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     Container(
                       child: Text(
                         "Cappucino",
-                        style: GoogleFonts.sora(
-                        textStyle: TextStyle(
+                        style: TextStyle(
+                        fontFamily: 'Sora',
                         fontWeight: FontWeight.w600,
                         fontSize: 16,
-                        )),
+                        ),
                       ),
                     ),
                     Container(
                       child: Text(
                         "with Chocolate",
-                        style: GoogleFonts.sora(
-                            textStyle: TextStyle(
+                        style: TextStyle(
+                            fontFamily: 'Sora',
                             fontWeight: FontWeight.w400,
                             fontSize: 12,
-                            color: Color(0xff9B9B9B))),
+                            color: Color(0xff9B9B9B)),
                       ),
                     ),
                     Container(
                       child: Row(
                         children: [
                           Text("\$ 4.53",
-                          style: GoogleFonts.sora(
-                                  textStyle: TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18,
-                                      color: Color(0xff2F4B4E))),
+                          style: TextStyle(
+                              fontFamily: 'Sora',
+                              fontWeight: FontWeight.w600,
+                              fontSize: 18,
+                              color: Color(0xff2F4B4E)),
                             ),
                           SizedBox(width: 30.0,),
-                          Image.asset("assets/images/Frame 17.png"),
+                          Image.asset(CoffeeShopAssetsPath.frame17),
                         ],
                       ),
                     )
@@ -529,22 +535,22 @@ class _DashboardScreenState extends State<DashboardScreen> {
           BottomNavigationBarItem(
             backgroundColor: Colors.white,
             icon: Image.asset(
-              'assets/images/Home.png',
+              CoffeeShopAssetsPath.homeImage,
             ),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/images/Heart.png'),
+            icon: Image.asset(CoffeeShopAssetsPath.heartImage),
             label: '',
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              'assets/images/Bag.png',
+              CoffeeShopAssetsPath.bagImage,
             ),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/images/Notification.png'),
+            icon: Image.asset(CoffeeShopAssetsPath.notificationImage),
             label: '',
           ),
         ],

@@ -1,5 +1,6 @@
+import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 import '../order/order.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -26,16 +27,16 @@ class _DetailScreenState extends State<DetailScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.asset("assets/images/Arrow.png"),
+                  Image.asset(CoffeeShopAssetsPath.arrowImage),
                   Text(
                     "Detail",
-                    style: GoogleFonts.sora(
-                      textStyle: TextStyle(
+                    style: TextStyle(
+                      fontFamily: 'Sora',
                       fontWeight: FontWeight.w600,
                       fontSize: 18,
-                    )),
+                    ),
                   ),
-                  Image.asset("assets/images/Heart 2.png")
+                  Image.asset(CoffeeShopAssetsPath.heart2)
                 ],
               ),
             ),
@@ -44,7 +45,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 top: 20,
                 left: 25,
               ),
-              child: Image.asset("assets/images/Cappucino 5.png"),
+              child: Image.asset(CoffeeShopAssetsPath.cappucino5),
             ),
             Padding(
               padding: const EdgeInsets.only(
@@ -63,12 +64,12 @@ class _DetailScreenState extends State<DetailScreen> {
                         ),
                         child: Text(
                           "Cappucino",
-                          style: GoogleFonts.sora(
-                            textStyle: TextStyle(
+                          style: TextStyle(
+                            fontFamily: 'Sora',
                             fontWeight: FontWeight.w600,
                             fontSize: 20,
                             color: Color(0xff2F2D2C),
-                          )),
+                          ),
                         ),
                       ),
                       Padding(
@@ -79,31 +80,31 @@ class _DetailScreenState extends State<DetailScreen> {
                         ),
                         child: Text(
                           "with Chocolate",
-                          style: GoogleFonts.sora(
-                            textStyle: TextStyle(
+                          style: TextStyle(
+                            fontFamily: 'Sora',
                             color: Color(0xff9B9B9B),
                             fontWeight: FontWeight.w400,
                             fontSize: 12,
-                          )),
+                          ),
                         ),
                       ),
                       Row(
                         children: [
                           SizedBox(width: 10,),
                           Image.asset(
-                            "assets/images/Rating.png",
+                            CoffeeShopAssetsPath.ratingImage
                           ),
                           Text(
                             "4.8",
-                            style: GoogleFonts.sora(
-                                textStyle: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C))),
+                            style: TextStyle(
+                                fontFamily: 'Sora',
+                                fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff2F2D2C)),
                           ),
                           Text(
                             "(230)",
-                            style: GoogleFonts.sora(
-                                textStyle: TextStyle(
-                                fontSize: 12, fontWeight: FontWeight.w400, color: Color(0xff808080))),
+                            style: TextStyle(
+                                fontFamily: 'Sora',
+                                fontSize: 12, fontWeight: FontWeight.w400, color: Color(0xff808080)),
                           ),
                         ],
                       ),
@@ -115,7 +116,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     decoration: BoxDecoration(
                         color: Color(0xffFFF0F0),
                         image: DecorationImage(
-                          image: AssetImage('assets/images/Frame 19.png'),
+                          image: AssetImage(CoffeeShopAssetsPath.frame19),
                         )),
                   ),
                   Container(
@@ -124,7 +125,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     decoration: BoxDecoration(
                       color: Color(0xffFFF0F0),
                       image: DecorationImage(
-                        image: AssetImage('assets/images/Frame 20.png'),
+                        image: AssetImage(CoffeeShopAssetsPath.frame20),
                       ),
                     ),
                   ),
@@ -150,12 +151,12 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
               child: Text(
                 "Description",
-                style: GoogleFonts.sora(
-                  textStyle: TextStyle(
+                style: TextStyle(
+                  fontFamily: 'Sora',
                   fontWeight: FontWeight.w600,
                   fontSize: 16,
                   color: Color(0xff2F2D2C),
-                )),
+                ),
               ),
             ),
             Padding(
@@ -165,14 +166,13 @@ class _DetailScreenState extends State<DetailScreen> {
                 height: 65,
                 child: RichText(
                   text: TextSpan(
-                    style: GoogleFonts.sora(
-                      textStyle: TextStyle(
+                    style: TextStyle(
+                        fontFamily: 'Sora',
                         fontWeight: FontWeight.w600,
                         fontSize: 14,
                         color: Color(0xff9b9b9b),
                         height: 1.5,
                       ),
-                    ),
                     children: [
                       TextSpan(
                         text:
@@ -201,8 +201,7 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
               child: Text(
                 "Size",
-                style: GoogleFonts.sora(
-                  textStyle: TextStyle(fontWeight: FontWeight.w600, fontSize: 16, color: Color(0xff2F2D2C))),
+                style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w600, fontSize: 16, color: Color(0xff2F2D2C)),
               ),
             ),
             Row(
@@ -218,8 +217,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   child: Center(
                     child: Text(
                       "S",
-                      style: GoogleFonts.sora( 
-                          textStyle: TextStyle(fontWeight: FontWeight.w400, fontSize: 14)),
+                      style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w400, fontSize: 14),
                     ),
                   ),
                 ),
@@ -233,8 +231,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   child: Center(
                     child: Text(
                       "M",
-                      style: GoogleFonts.sora(
-                          textStyle: TextStyle(fontWeight: FontWeight.w400, fontSize: 14, color: Color(0xffC67C4E))),
+                      style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w400, fontSize: 14, color: Color(0xffC67C4E)),
                     ),
                   ),
                 ),
@@ -251,8 +248,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   child: Center(
                     child: Text(
                       "L",
-                      style: GoogleFonts.sora(
-                          textStyle: TextStyle(fontWeight: FontWeight.w400, fontSize: 14, color: Color(0xff2F2D2C))),
+                      style: TextStyle(fontFamily: 'Sora', fontWeight: FontWeight.w400, fontSize: 14, color: Color(0xff2F2D2C)),
                     ),
                   ),
                 ),
@@ -269,24 +265,24 @@ class _DetailScreenState extends State<DetailScreen> {
                     children: [
                       Text(
                         "Price",
-                        style: GoogleFonts.sora(
-                          textStyle: TextStyle(
+                        style: TextStyle(
+                          fontFamily: 'Sora',
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                           color: Color(0xff9B9B9B),
-                        )),
+                        ),
                       ),
                       SizedBox(
                         height: 5,
                       ),
                       Text(
                         "\$4.53",
-                        style: GoogleFonts.sora(
-                          textStyle: TextStyle(
+                        style: TextStyle(
+                          fontFamily: 'Sora',
                           color: Color(0xffC67C4E),
                           fontWeight: FontWeight.w600,
                           fontSize: 18,
-                        )),
+                        ),
                       ),
                     ],
                   ),
@@ -307,9 +303,9 @@ class _DetailScreenState extends State<DetailScreen> {
                       child: Center(
                         child: Text(
                           "Buy Now",
-                          style: GoogleFonts.sora(
-                              textStyle: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.w600, fontSize: 16)),
+                          style: TextStyle(
+                              fontFamily: 'Sora',
+                              color: Colors.white, fontWeight: FontWeight.w600, fontSize: 16),
                         ),
                       ),
                     ),
