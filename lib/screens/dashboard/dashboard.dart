@@ -240,7 +240,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       ),
                       Container(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 0.5, right: 50.0),
+                          padding: const EdgeInsets.only(left: 0.5, right: 43.0),
                           child: Text(
                             CoffeeShopText.capText,
                             style: TextStyle(
@@ -268,13 +268,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                            Text(CoffeeShopText.capPriceText,
-                            style: TextStyle(
-                                fontFamily: CoffeeShopAssetsPath.soraFont,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 18,
-                                color: deepBrownText),
-                              ),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 20.0),
+                              child: Text(CoffeeShopText.capPriceText,
+                              style: TextStyle(
+                                  fontFamily: CoffeeShopAssetsPath.soraFont,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 18,
+                                  color: deepBrownText),
+                                ),
+                            ),
                             SizedBox(width: 30.0,),
                             Image.asset(CoffeeShopAssetsPath.frame17),
                           ],
@@ -320,7 +323,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       ),
                       Container(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 0.0, right: 50.0),
+                          padding: const EdgeInsets.only(left: 0.0, right: 43.0),
                           child: Text(
                             CoffeeShopText.capText,
                             style: TextStyle(
@@ -347,12 +350,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       Container(
                         child: Row(
                           children: [
-                            Text(CoffeeShopText.capPriceText,
-                            style: TextStyle(
-                              fontFamily: CoffeeShopAssetsPath.soraFont,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 18,
-                              color: deepBrownText),),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 20.0),
+                              child: Text(CoffeeShopText.capPriceText,
+                              style: TextStyle(
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18,
+                                color: deepBrownText),),
+                            ),
                             SizedBox(width: 30.0,),
                             Image.asset(CoffeeShopAssetsPath.frame17),
                           ],
@@ -411,7 +417,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     ),
                     Container(
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 0.5, right: 50.0),
+                        padding: const EdgeInsets.only(left: 0.5, right: 43.0),
                         child: Text(
                           CoffeeShopText.capText,
                           style: TextStyle(
@@ -437,13 +443,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     Container(
                       child: Row(
                         children: [
-                          Text(CoffeeShopText.capPriceText,
-                          style: TextStyle(
-                              fontFamily: CoffeeShopAssetsPath.soraFont,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 18,
-                              color: deepBrownText),
-                            ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 20.0),
+                            child: Text(CoffeeShopText.capPriceText,
+                            style: TextStyle(
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18,
+                                color: deepBrownText),
+                              ),
+                          ),
                             SizedBox(width: 30.0,),
                           Image.asset(CoffeeShopAssetsPath.frame17),
                         ],
@@ -488,7 +497,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 50.0),
+                      padding: const EdgeInsets.only(right: 43.0),
                       child: Container(
                         child: Text(
                           CoffeeShopText.capText,
@@ -516,13 +525,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     Container(
                       child: Row(
                         children: [
-                          Text(CoffeeShopText.capPriceText,
-                          style: TextStyle(
-                              fontFamily: CoffeeShopAssetsPath.soraFont,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 18,
-                              color: deepBrownText),
-                            ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 20.0),
+                            child: Text(CoffeeShopText.capPriceText,
+                            style: TextStyle(
+                                fontFamily: CoffeeShopAssetsPath.soraFont,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18,
+                                color: deepBrownText),
+                              ),
+                          ),
                           SizedBox(width: 30.0,),
                           Image.asset(CoffeeShopAssetsPath.frame17),
                         ],
