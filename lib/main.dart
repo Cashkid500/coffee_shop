@@ -3,13 +3,21 @@ import 'package:coffee_shop/constants/color_constants.dart';
 import 'package:coffee_shop/constants/text_constants.dart';
 import 'package:coffee_shop/screens/dashboard/dashboard.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomePage());
+    return ScreenUtilInit(
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return MaterialApp(debugShowCheckedModeBanner: false, home: HomePage());
+      }
+    );
   }
 }
 
@@ -33,51 +41,51 @@ class _HomePageState extends State<HomePage> {
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 450,
+              height: 450.sp,
               child: Image.asset(
                 CoffeeShopAssetsPath.coffeeimage,
               ),
             ),
             Positioned(
-              bottom: 70,
-              left: 40.0,
-              right: 20.0,
+              bottom: 70.sp,
+              left: 40.sp,
+              right: 20.sp,
               child: SizedBox(
                 width: size.width,
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 80.0,
+                      height: 80.sp,
                     ),
                     SizedBox(
-                      width: 260,
+                      width: 260.sp,
                       child: Text(
                         CoffeeShopText.onboardingText,
                         style: TextStyle(
                             color: whiteText,
                             fontFamily: CoffeeShopAssetsPath.soraFont,
-                            fontSize: 30.0,
+                            fontSize: 30.sp,
                             fontWeight: FontWeight.w600),
                         textAlign: TextAlign.center,
-                      ),
+                      ).animate(onPlay: (controller) {controller.repeat(period: 1500.ms);},).fade(duration: 500.ms).scale(delay: 500.ms),
                     ),
                     SizedBox(
-                      height: 20.0,
+                      height: 20.sp,
                     ),
                     SizedBox(
-                      width: 260,
+                      width: 260.sp,
                       child: Text(
                         CoffeeShopText.onboarding2Text,
                         style: TextStyle(
                             color: darkGrayText,
                             fontFamily: CoffeeShopAssetsPath.soraFont,
-                            fontSize: 14.0,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w400),
                         textAlign: TextAlign.center,
                       ),
                     ),
                     SizedBox(
-                      height: 30.0,
+                      height: 30.sp,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -91,24 +99,24 @@ class _HomePageState extends State<HomePage> {
                       },
                       child: Container(
                         alignment: Alignment.bottomCenter,
-                        height: 54.0,
-                        width: 317,
+                        height: 54.sp,
+                        width: 317.sp,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: whiteText,
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 30, bottom: 10),
+                          padding: EdgeInsets.only(left: 30.sp, bottom: 10.sp),
                           child: Row(
                             children: [
                               Image.asset(CoffeeShopAssetsPath.googleimage),
                               Padding(
-                                padding: const EdgeInsets.only(left: 10),
+                                padding: EdgeInsets.only(left: 10.sp),
                                 child: Text(
                                   CoffeeShopText.googleMessage,
                                   style: TextStyle(
                                       fontFamily: CoffeeShopAssetsPath.robotoFont,
-                                      fontSize: 20,
+                                      fontSize: 20.sp,
                                       fontWeight: FontWeight.w600,
                                       color: darkGrayText,
                                     ),
