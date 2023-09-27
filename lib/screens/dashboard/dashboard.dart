@@ -23,10 +23,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
   int current = 0;
   String imagepath = CoffeeShopAssetsPath.cappucinoImage;
   String starsymbolpath = CoffeeShopAssetsPath.starImage;
-  String fourpointeightpath = "4.8";
+  String fourpointeightpath = CoffeeShopText.fourPointEightText;
   String captextpath = CoffeeShopText.capText;
   String withchocolatepath = CoffeeShopText.withChocolateText;
-  String cappricepath = "\$ 4.53";
+  String cappricepath = CoffeeShopText.capPriceText;
 
   @override
   Widget build(BuildContext context) {
@@ -215,31 +215,31 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     CappuccinoA(
                         imagepath: CoffeeShopAssetsPath.cappucinoImage,
                         starsymbolpath: starsymbolpath,
-                        fourpointeightpath: "4.8",
-                        captextpath: captextpath,
-                        withchocolatepath: withchocolatepath,
-                        cappricepath: '\$ 4.53'),
+                        fourpointeightpath: CoffeeShopText.fourPointEightText,
+                        captextpath: CoffeeShopText.capText,
+                        withchocolatepath: CoffeeShopText.withChocolateText,
+                        cappricepath: CoffeeShopText.capPriceText),
                     CappuccinoA(
                         imagepath: CoffeeShopAssetsPath.cappucino2,
                         starsymbolpath: starsymbolpath,
-                        fourpointeightpath: "4.8",
-                        captextpath: captextpath,
-                        withchocolatepath: withchocolatepath,
-                        cappricepath: cappricepath),
+                        fourpointeightpath: CoffeeShopText.fourPointEightText,
+                        captextpath: CoffeeShopText.capText,
+                        withchocolatepath: CoffeeShopText.withChocolateText,
+                        cappricepath: CoffeeShopText.capPriceText),
                     CappuccinoA(
                         imagepath: CoffeeShopAssetsPath.cappucino3,
                         starsymbolpath: starsymbolpath,
-                        fourpointeightpath: "4.5",
-                        captextpath: captextpath,
-                        withchocolatepath: withchocolatepath,
-                        cappricepath: cappricepath),
+                        fourpointeightpath: CoffeeShopText.fourPointFiveText,
+                        captextpath: CoffeeShopText.capText,
+                        withchocolatepath: CoffeeShopText.withChocolateText,
+                        cappricepath: CoffeeShopText.capPriceText),
                     CappuccinoA(
                         imagepath: CoffeeShopAssetsPath.cappucino4,
                         starsymbolpath: starsymbolpath,
-                        fourpointeightpath: "4.0",
-                        captextpath: captextpath,
-                        withchocolatepath: withchocolatepath,
-                        cappricepath: cappricepath),
+                        fourpointeightpath: CoffeeShopText.fourPointZeroText,
+                        captextpath: CoffeeShopText.capText,
+                        withchocolatepath: CoffeeShopText.withChocolateText,
+                        cappricepath: CoffeeShopText.capPriceText),
                   ],
                 ),
               ),

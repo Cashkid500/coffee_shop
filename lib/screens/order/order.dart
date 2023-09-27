@@ -1,6 +1,7 @@
 import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:coffee_shop/constants/color_constants.dart';
 import 'package:coffee_shop/constants/text_constants.dart';
+import 'package:coffee_shop/screens/detail/detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -35,7 +36,12 @@ class _OrderScreenState extends State<OrderScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Image.asset(CoffeeShopAssetsPath.arrowImage),
+                    GestureDetector(
+                      onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) => DetailScreen()));
+                        },
+                      child: Image.asset(CoffeeShopAssetsPath.arrowImage)),
                     const Spacer(),
                     Text(
                       CoffeeShopText.ordText,
@@ -510,3 +516,5 @@ class _OrderScreenState extends State<OrderScreen> {
     );
   }
 }
+
+

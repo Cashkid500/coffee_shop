@@ -1,6 +1,7 @@
 import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:coffee_shop/constants/color_constants.dart';
 import 'package:coffee_shop/constants/text_constants.dart';
+import 'package:coffee_shop/screens/dashboard/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../order/order.dart';
@@ -29,7 +30,12 @@ class _DetailScreenState extends State<DetailScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.asset(CoffeeShopAssetsPath.arrowImage),
+                  GestureDetector(
+                    onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => DashboardScreen()));
+                      },
+                    child: Image.asset(CoffeeShopAssetsPath.arrowImage)),
                   Text(
                     CoffeeShopText.detText,
                     style: TextStyle(
