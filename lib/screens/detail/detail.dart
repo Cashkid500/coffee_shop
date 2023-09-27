@@ -175,16 +175,6 @@ class _DetailScreenState extends State<DetailScreen> {
                     ),
                   );
                 },
-
-                // child: Text(
-                //   CoffeeShopText.descripText,
-                //   style: TextStyle(
-                //     fontFamily: CoffeeShopAssetsPath.soraFont,
-                //     fontWeight: FontWeight.w600,
-                //     fontSize: 16,
-                //     color: darkCharcoalText,
-                //   ),
-                // ),
               ),
             ),
             Padding(
