@@ -1,9 +1,9 @@
 import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:coffee_shop/constants/color_constants.dart';
 import 'package:coffee_shop/constants/text_constants.dart';
+import 'package:coffee_shop/screens/detail/detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../detail/detail.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);
@@ -23,10 +23,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
   int current = 0;
   String imagepath = CoffeeShopAssetsPath.cappucinoImage;
   String starsymbolpath = CoffeeShopAssetsPath.starImage;
-  String fourpointeightpath = "4.8";
+  String fourpointeightpath = CoffeeShopText.fourPointEightText;
   String captextpath = CoffeeShopText.capText;
   String withchocolatepath = CoffeeShopText.withChocolateText;
-  String cappricepath = "\$ 4.53";
+  String cappricepath = CoffeeShopText.capPriceText;
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +81,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                           fontWeight: FontWeight.w600,
                                         ),
                                       ),
-                                      SizedBox(width: 1),
+                                      SizedBox(width: 1.sp),
                                       Image.asset(
                                         CoffeeShopAssetsPath.arrowDown,
                                       ),
@@ -128,7 +128,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 filled: true,
                                 fillColor: nightRiderText,
                                 enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(15.r),
                                 ),
                               ),
                             ),
@@ -173,7 +173,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 color: current == index
                                     ? pinkText
                                     : whiteSmokeText,
-                                borderRadius: BorderRadius.circular(12),
+                                borderRadius: BorderRadius.circular(12.r),
                               ),
                               child: Center(
                                 child: Text(
@@ -200,7 +200,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => DetailScreen()));
+                    builder: (BuildContext context) =>const DetailScreen()));
               },
               child: Padding(
                 padding: EdgeInsets.only(
@@ -215,28 +215,28 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     CappuccinoA(
                         imagepath: CoffeeShopAssetsPath.cappucinoImage,
                         starsymbolpath: starsymbolpath,
-                        fourpointeightpath: "4.8",
+                        fourpointeightpath: CoffeeShopText.fourPointEightText,
                         captextpath: captextpath,
                         withchocolatepath: withchocolatepath,
-                        cappricepath: '\$ 4.53'),
+                        cappricepath: cappricepath),
                     CappuccinoA(
                         imagepath: CoffeeShopAssetsPath.cappucino2,
                         starsymbolpath: starsymbolpath,
-                        fourpointeightpath: "4.8",
+                        fourpointeightpath: CoffeeShopText.fourPointEightText,
                         captextpath: captextpath,
                         withchocolatepath: withchocolatepath,
                         cappricepath: cappricepath),
                     CappuccinoA(
                         imagepath: CoffeeShopAssetsPath.cappucino3,
                         starsymbolpath: starsymbolpath,
-                        fourpointeightpath: "4.5",
+                        fourpointeightpath: CoffeeShopText.fourPointFiveText,
                         captextpath: captextpath,
                         withchocolatepath: withchocolatepath,
                         cappricepath: cappricepath),
                     CappuccinoA(
                         imagepath: CoffeeShopAssetsPath.cappucino4,
                         starsymbolpath: starsymbolpath,
-                        fourpointeightpath: "4.0",
+                        fourpointeightpath: CoffeeShopText.fourPointZeroText,
                         captextpath: captextpath,
                         withchocolatepath: withchocolatepath,
                         cappricepath: cappricepath),

@@ -53,7 +53,7 @@ class _OrderScreenState extends State<OrderScreen> {
                 child: Container(
                   decoration: BoxDecoration(
                       color: lightRedBox,
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(10.r),
                       border: Border.all(color: gray87Box)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -64,7 +64,7 @@ class _OrderScreenState extends State<OrderScreen> {
                         height: 40.sp,
                         decoration: BoxDecoration(
                           color: pinkButton,
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(10.r),
                         ),
                         child: Center(
                           child: Text(
@@ -146,7 +146,7 @@ class _OrderScreenState extends State<OrderScreen> {
                           Container(
                             padding: EdgeInsets.all(8.sp),
                             decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16),
+                                borderRadius: BorderRadius.circular(16.r),
                                 border: Border.all(color: gray87Box)),
                             child: Padding(
                               padding: EdgeInsets.only(right: 5.sp),
@@ -179,7 +179,7 @@ class _OrderScreenState extends State<OrderScreen> {
                     Container(
                       padding: EdgeInsets.all(8.sp),
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
+                          borderRadius: BorderRadius.circular(16.r),
                           border: Border.all(color: gray87Box)),
                       child: Center(
                         child: Row(
@@ -245,9 +245,9 @@ class _OrderScreenState extends State<OrderScreen> {
                           height: 30.sp,
                           width: 30.sp,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(50),
+                              borderRadius: BorderRadius.circular(50.r),
                               border: Border.all(color: gray87Text)),
-                          child: Center(
+                          child:const Center(
                               child: CoffeeShopAssetsPath.remove)),
                       SizedBox(
                         width: 10.sp,
@@ -267,9 +267,9 @@ class _OrderScreenState extends State<OrderScreen> {
                           height: 30.sp,
                           width: 30.sp,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(50),
+                              borderRadius: BorderRadius.circular(50.r),
                               border: Border.all(color: gray87Box)),
-                          child: Center(
+                          child:const Center(
                               child: CoffeeShopAssetsPath.add)),
                     ],
                   )
@@ -299,7 +299,7 @@ class _OrderScreenState extends State<OrderScreen> {
                     width: 300.sp,
                     height: 56.sp,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(10.r),
                         color: whiteBox),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -389,7 +389,7 @@ class _OrderScreenState extends State<OrderScreen> {
                         color: darkCharcoalText,
                       ),
                       children: [
-                        TextSpan(text: CoffeeShopText.textSpanText),
+                       const TextSpan(text: CoffeeShopText.textSpanText),
                         TextSpan(
                           text: CoffeeShopText.textSpan2Text,
                           style: TextStyle(
@@ -453,7 +453,7 @@ class _OrderScreenState extends State<OrderScreen> {
                         width: 51.sp,
                         height: 24.sp,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                          borderRadius: BorderRadius.circular(15.r),
                           color: pinkButton,
                         ),
                         child: Center(
@@ -490,7 +490,7 @@ class _OrderScreenState extends State<OrderScreen> {
                 width: 315.sp,
                 height: 55.sp,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(16.r),
                     color: pinkButton),
                 child: Center(
                   child: Text(

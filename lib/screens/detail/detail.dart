@@ -1,9 +1,9 @@
 import 'package:coffee_shop/constants/asset_path.dart';
 import 'package:coffee_shop/constants/color_constants.dart';
 import 'package:coffee_shop/constants/text_constants.dart';
+import 'package:coffee_shop/screens/order/order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../order/order.dart';
 
 class DetailScreen extends StatefulWidget {
   const DetailScreen({Key? key}) : super(key: key);
@@ -122,16 +122,17 @@ class _DetailScreenState extends State<DetailScreen> {
                     width: 44.sp,
                     decoration: BoxDecoration(
                         color: white2Text,
-                        image: DecorationImage(
+                        image:const DecorationImage(
                           image: AssetImage(CoffeeShopAssetsPath.frame19),
-                        )),
+                        ),
+                        ),
                   ),
                   Container(
                     height: 44.sp,
                     width: 44.sp,
                     decoration: BoxDecoration(
                       color: white2Text,
-                      image: DecorationImage(
+                      image:const DecorationImage(
                         image: AssetImage(CoffeeShopAssetsPath.frame20),
                       ),
                     ),
@@ -147,7 +148,8 @@ class _DetailScreenState extends State<DetailScreen> {
               child: SizedBox(
                   height: 5.sp,
                   width: 500.sp,
-                  child: Divider(height: 4.sp, thickness: 2.sp, color: whisperText)),
+                  child: Divider(height: 4.sp, thickness: 2.sp, color: whisperText)
+                ),
             ),
             Padding(
               padding: EdgeInsets.only(
@@ -157,7 +159,7 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
               child: TweenAnimationBuilder(
                 tween: Tween<double>(begin: 8.0, end: 16.0),
-                duration: Duration(milliseconds: 2000),
+                duration:const Duration(milliseconds: 2000),
                 builder: (BuildContext context, double value, Widget? child) {
                   return Text(
                     CoffeeShopText.descripText,
@@ -169,16 +171,6 @@ class _DetailScreenState extends State<DetailScreen> {
                     ),
                   );
                 },
-
-                // child: Text(
-                //   CoffeeShopText.descripText,
-                //   style: TextStyle(
-                //     fontFamily: CoffeeShopAssetsPath.soraFont,
-                //     fontWeight: FontWeight.w600,
-                //     fontSize: 16,
-                //     color: darkCharcoalText,
-                //   ),
-                // ),
               ),
             ),
             Padding(
@@ -235,7 +227,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   height: 43.sp,
                   padding: EdgeInsets.all(8.sp),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(8.r),
                       border: Border.all(color: gray87Text)),
                   child: Center(
                     child: Text(
@@ -252,7 +244,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   height: 43.sp,
                   padding: EdgeInsets.all(8.sp),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
+                    borderRadius: BorderRadius.circular(8.r),
                     border: Border.all(color: pinkText),
                     color: seaShellText,
                   ),
@@ -272,7 +264,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   height: 43.sp,
                   padding: EdgeInsets.all(8.sp),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
+                    borderRadius: BorderRadius.circular(8.r),
                     border: Border.all(
                       color: gray87Text,
                     ),
@@ -325,15 +317,15 @@ class _DetailScreenState extends State<DetailScreen> {
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => OrderScreen()));
+                          builder: (BuildContext context) =>const OrderScreen()));
                     },
                     child: Container(
                       height: 55.sp,
                       width: 217.sp,
-                      padding: EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.sp),
                       decoration: BoxDecoration(
                           color: pinkButton,
-                          borderRadius: BorderRadius.circular(16),
+                          borderRadius: BorderRadius.circular(16.r),
                           border: Border.all(color: gray87Text)),
                       child: Center(
                         child: Text(
