@@ -21,9 +21,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   ];
   int _selectedIndex = 0;
   int current = 0;
-  String imagepath = CoffeeShopAssetsPath.cappucinoImage;
   String starsymbolpath = CoffeeShopAssetsPath.starImage;
-  String fourpointeightpath = CoffeeShopText.fourPointEightText;
   String captextpath = CoffeeShopText.capText;
   String withchocolatepath = CoffeeShopText.withChocolateText;
   String cappricepath = CoffeeShopText.capPriceText;
@@ -381,7 +379,8 @@ class CappuccinoA extends StatelessWidget {
                 ),
                 Image.asset(CoffeeShopAssetsPath.frame17),
               ],
-            )),
+            ),
+          ),
       ],
     );
   }
